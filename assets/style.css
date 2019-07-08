@@ -1,9 +1,190 @@
 @font-face {
-  font-family: Aller;
-  src: url(Aller_Rg.ttf);
-
+  font-family: FiraSans-black;
+  src: url(FiraSans-Black.ttf);
 }
 @font-face {
-  font-family: Allerbd;
-  src: url(Aller_Bd.ttf);
+  font-family: FiraSans-thin;
+  src: url(FiraSans-Thin.ttf);
+}
+@font-face {
+  font-family: FiraSans-italic;
+  src: url(FiraSans-Italic.ttf);
+}
+@font-face {
+  font-family: FiraSans-regular;
+  src: url(FiraSans-Regular.ttf);
+}
+
+body{
+
+  background-color: #333;
+  color:#eee;
+}
+.lockup{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:20px;
+  font-family: 'FiraSans-black', regular;
+  font-size:64px;
+}
+.tagline{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'FiraSans-thin', regular;
+  font-size:32px;
+}
+#sketch-holder{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  /* margin:20px; */
+  /* width: 940px; height: 300px; */
+  /* background-size: contain; */
+  /* position:fixed; */
+  /* background-color: #ccc; */
+}
+.themes{
+  position: fixed;
+  top:0;
+  left:20px;
+  right:20px;
+  line-height: 2;
+height: 90vh;
+width:100vw;
+  font-family: 'FiraSans-regular', regular;
+  font-size:16px;
+
+}
+.theme1{
+  height: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: red; */
+  /* width:50%; */
+}
+.theme2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  top:0;
+  right:50px;
+  height: 100%;
+  position: absolute;
+    /* background-color: blue; */
+  /* width:50%; */
+}
+.actions{
+
+  width:100%;
+  flex-direction: row;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+position: fixed;
+
+bottom:50px;
+left:0;
+font-size:16px;
+font-family: FiraSans-italic;
+  /* margin-bottom:50px; */
+}
+
+.tickets{
+position: relative;
+  width:32%;
+  color:#8cf85a;
+}
+.ticket1{
+  left:0;
+    position: absolute;
+    /* background-color: blue; */
+  width:50%;
+  margin:0;
+  padding:10px;
+  border: 2px solid #8cf85a;
+}
+.ticket2{
+  left:50%;
+    position: absolute;
+  /* background-color: blue; */
+    width:50%;
+    margin:0;
+  padding:10px;
+  border: 2px solid #8cf85a;
+  color:#333;
+  background-color: #8cf85a;
+}
+
+.subscribe{
+width:32%;
+  position: relative;
+
+  color:#fd4cfc;
+}
+.subscribe1{
+  left:0;
+    position: absolute;
+    /* background-color: blue; */
+  width:50%;
+  margin:0;
+  padding:10px;
+  border: 2px solid #fd4cfc;
+}
+.subscribe2{
+  left:50%;
+    position: absolute;
+  /* background-color: blue; */
+    width:50%;
+    margin:0;
+  padding:10px;
+  border: 2px solid #fd4cfc;
+  color:#333;
+  background-color: #fd4cfc;
+}
+
+.mail{
+  position: relative;
+width:32%;
+    /* padding:10px; */
+  color:#3399ff;
+}
+.mail1{
+  left:0;
+    position: absolute;
+    /* background-color: blue; */
+  width:50%;
+  margin:0;
+  padding:10px;
+  border: 2px solid #3399ff;
+}
+.mail2{
+  left:50%;
+    position: absolute;
+  /* background-color: blue; */
+    width:50%;
+    margin:0;
+  padding:10px;
+  border: 2px solid #3399ff;
+  color:#333;
+  background-color: #3399ff;
+}
+.credit{
+  text-align:center;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:15px;
+  padding:10px;
+  font-family: FiraSans-thin;
+  color:#eee;
+  display: block;
+  background-color: #333;
 }
