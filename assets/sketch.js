@@ -2,25 +2,25 @@ var xdiff = 6;
 var x = 50;
 var y =30;
 var x1 = x++;
-var aaa = document.getElementById('container').clientW;
-var rows = aaa/50;
+// var aaa = document.getElementById('container').clientW;
+// var rows = aaa/50;
 // var y1 = x++;
 
 function setup() {
   var clientW = document.getElementById('sketch-holder').offsetWidth;
-
-  // var canvas = createCanvas(940, 480);
-  // canvas.parent('sketch-holder');
-  resizeCanvas(940, 480);
+  var clientH = document.getElementById('sketch-holder').offsetHeight;
+  var canvas = createCanvas(clientW, clientH);
+  canvas.parent('sketch-holder');
+  // resizeCanvas(940, 480);
 
   // strokeWeight(1);
   // strokeJoin(ROUND);
   //   fill (240);
   //   rect(50, 25, 800, 350);
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 31, x, y);
-  //   }
+    // for(var i = 56; i<800; i+=56){
+    //   fill(50);
+    //   rect(i, 31, x, y);
+    // }
   //   for(var i = 56; i<800; i+=56){
   //     fill(50);
   //     rect(i, 70, x, x);
@@ -48,8 +48,12 @@ function setup() {
 //   background(255);
 // }
 function draw() {
-  //background(10, 10, 10, 10);
-
+if(mouseIsPressed){
+  fill(0);
+} else{
+  fill(255);
+}
+ellipse(mouseX, mouseY, 80, 80);
 }
 
 function mouseClicked() {
