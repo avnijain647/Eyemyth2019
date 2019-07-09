@@ -1,62 +1,94 @@
-var xdiff = 6;
-var x = 50;
-var y =30;
-var x1 = x++;
-// var aaa = document.getElementById('container').clientW;
-// var rows = aaa/50;
-// var y1 = x++;
-
+let mic, fft;
 function setup() {
+
   var clientW = document.getElementById('sketch-holder').offsetWidth;
   var clientH = document.getElementById('sketch-holder').offsetHeight;
   var canvas = createCanvas(clientW, clientH);
   canvas.parent('sketch-holder');
-  // resizeCanvas(940, 480);
+ background(255);
+    mic = new p5.AudioIn();
+    mic.start();
+    fft = new p5.FFT();
+    fft.setInput(mic);
+  // createCanvas(710, 400);
+  // strokeWeight(20);
+  // stroke(255, 100);
 
-  // strokeWeight(1);
-  // strokeJoin(ROUND);
-  //   fill (240);
-  //   rect(50, 25, 800, 350);
-    // for(var i = 56; i<800; i+=56){
-    //   fill(50);
-    //   rect(i, 31, x, y);
-    // }
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 70, x, x);
-  //   }
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 130, x, x);
-  //   }
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 190, x, x);
-  //   }
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 250, x, x);
-  //   }
-  //   for(var i = 56; i<800; i+=56){
-  //     fill(50);
-  //     rect(i, 310, x, x);
-  //   }
+  // x[x.length - 1] = width / 2; // Set base x-coordinate
+  // y[x.length - 1] = height; // Set base y-coordinate
 }
-// function setup() {
-//   createCanvas(940, 480);
-//   // noStroke();
-//   background(255);
-// }
+
 function draw() {
-if(mouseIsPressed){
-  fill(0);
-} else{
-  fill(255);
-}
-ellipse(mouseX, mouseY, 80, 80);
+  background(200);
+
+  let spectrum = fft.analyze();
+
+  beginShape();
+  for (i = 0; i < spectrum.length; i++) {
+    vertex(i, map(spectrum[i], 0, 255, height, 0));
+  }
+  endShape();
 }
 
-function mouseClicked() {
 
+// function draw() {
+//   background(0);
+//   if(mouseIsPressed){
+//     fill(0);
+//   } else{
+//     fill(255);
+//   }
+//   ellipse(mouseX, mouseY, 80, 80);
+// }
 
-}
+// function draw() {
+//   background(0);
+//   if(mouseIsPressed){
+//     fill(0);
+//   } else{
+//     fill(255);
+//   }
+//   ellipse(mouseX, mouseY, 80, 80);
+//
+//
+//   reachSegment(0, mouseX, mouseY);
+//   for (let i = 1; i < numSegments; i++) {
+//     reachSegment(i, targetX, targetY);
+//   }
+//   for (let j = x.length - 1; j >= 1; j--) {
+//     positionSegment(j, j - 1);
+//   }
+//   for (let k = 0; k < x.length; k++) {
+//     segment(x[k], y[k], angle[k], (k + 1) * 2);
+//   }
+// }
+//
+// function positionSegment(a, b) {
+//   x[b] = x[a] + cos(angle[a]) * segLength;
+//   y[b] = y[a] + sin(angle[a]) * segLength;
+// }
+//
+// function reachSegment(i, xin, yin) {
+//   const dx = xin - x[i];
+//   const dy = yin - y[i];
+//   angle[i] = atan2(dy, dx);
+//   targetX = xin - cos(angle[i]) * segLength;
+//   targetY = yin - sin(angle[i]) * segLength;
+// }
+//
+//
+// function segment(x, y, a, sw) {
+//   strokeWeight(sw);
+//   push();
+//   translate(x, y);
+//   rotate(a);
+//   line(0, 0, segLength, 0);
+//   pop();
+// }
+
+// function setup() {
+//   var clientW = document.getElementById('sketch-holder').offsetWidth;
+//   var clientH = document.getElementById('sketch-holder').offsetHeight;
+//   var canvas = createCanvas(clientW, clientH);
+//   canvas.parent('sketch-holder');
+// }

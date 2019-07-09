@@ -43,7 +43,7 @@ body{
   position: fixed;
   top:0;
   left:0;
-  z-index: 20;
+  z-index: 2;
 width:100vw;
 height:100vh;
   /* margin:20px; */
@@ -89,108 +89,91 @@ width:100vw;
     /* background-color: blue; */
   /* width:50%; */
 }
-.actions{
+#mc_embed_signup{
+  padding:0;
+}
+h2{
+    font-size:21px;
+}
+#mc_embed_signup form{
+  padding:0;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  z-index:3;
+  background:#333;
+  color:#eee;
+  font-size:16px;
+    font-family: FiraSans-regular;
+    /* background-color: red; */
 
+}
+.newsletter{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mc-field-group{
+  width:100%;
+  /* background-color: red; */
+}
+.actions{
+  height:50px;
   width:100%;
   flex-direction: row;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+justify-content: flex-start;
 position: fixed;
-
-bottom:50px;
+bottom:10px;
 left:0;
+z-index:4;
 font-size:16px;
-font-family: FiraSans-italic;
+font-family: FiraCode-regular;
   /* margin-bottom:50px; */
 }
 
 .tickets{
-position: relative;
-  width:32%;
-  color:#8cf85a;
-}
-.ticket1{
-  left:0;
-    position: absolute;
-    /* background-color: blue; */
-  width:50%;
-  margin:0;
-  padding:10px;
-  border: 2px solid #8cf85a;
-}
-.ticket2{
-  left:50%;
-    position: absolute;
-  /* background-color: blue; */
-    width:50%;
-    margin:0;
-  padding:10px;
-  border: 2px solid #8cf85a;
+  padding:12px;
+  text-align: center;
+width:33%;
+   background-color: #8cf85a;
+border: 1px solid #8cf85a;
   color:#333;
-  background-color: #8cf85a;
 }
 
-.subscribe{
-width:32%;
-  position: relative;
-
-  color:#fd4cfc;
-}
-.subscribe1{
-  left:0;
-    position: absolute;
-    /* background-color: blue; */
-  width:50%;
-  margin:0;
-  padding:10px;
-  border: 2px solid #fd4cfc;
-}
-.subscribe2{
-  left:50%;
-    position: absolute;
-  /* background-color: blue; */
-    width:50%;
+.social1{
+  height:100%;
     margin:0;
-  padding:10px;
-  border: 2px solid #fd4cfc;
-  color:#333;
-  background-color: #fd4cfc;
-}
-
-.mail{
-  position: relative;
-width:32%;
-    /* padding:10px; */
-  color:#3399ff;
-}
-.mail1{
-  left:0;
-    position: absolute;
-    /* background-color: blue; */
-  width:50%;
-  margin:0;
-  padding:10px;
-  border: 2px solid #3399ff;
-}
-.mail2{
-  left:50%;
-    position: absolute;
-  /* background-color: blue; */
-    width:50%;
-    margin:0;
-  padding:10px;
-  border: 2px solid #3399ff;
-  color:#333;
+    padding:0;
+  border: 1px solid #3399ff;
   background-color: #3399ff;
 }
+.social1 img{
+
+  padding-left:15px;
+  padding-right:15px;
+  height:24px;
+}
+.mail{
+  padding :12px;
+
+  width:32%;
+  background-color: #3399ff;
+  color:#333;
+  border:1px solid #3399ff;
+}
+
+.credit img{
+  padding-right:5px;
+  height:12px;
+}
 .credit{
-  text-align:center;
-  max-width:600px;
-  margin-left:auto;
-  margin-right:auto;
+  text-align: center;
+  border: 1px solid #eee;
+    width:29%;
+ /* background-color: green; */
   font-size:15px;
-  padding:10px;
+  padding:11px 11px 11px 11px;
   font-family: FiraSans-thin;
   color:#eee;
   display: block;
