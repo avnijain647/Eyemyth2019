@@ -18,11 +18,19 @@
   font-family: FiraCode-regular;
   src: url(FiraCode-Regular.otf);
 }
+@font-face {
+  font-family: VT323-Regular;
+  src: url(VT323-Regular.ttf);
+}
 
 body{
 
   background-color: #333;
   color:#eee;
+}
+.eyemyth{
+  font-family: 'VT323-Regular', regular;
+  font-size:110px;
 }
 .lockup{
   max-width:600px;
@@ -68,7 +76,7 @@ width:100vw;
 .theme1{
   height: 100%;
   top:0;
-  left:0;
+  left:75%;
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
