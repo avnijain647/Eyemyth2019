@@ -178,13 +178,13 @@ border: 1px solid #8cf85a;
 }
 .credit{
   text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid #333;
     width:29%;
  /* background-color: green; */
   font-size:15px;
   padding:11px 11px 11px 11px;
   font-family: FiraSans-thin;
-  color:#eee;
+  color:#333;
   display: block;
-  background-color: #333;
+  background-color: #456fff;
 }

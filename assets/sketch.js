@@ -14,7 +14,7 @@ function setup() {
 	  // createCanvas(710, 400);
 	  // strokeWeight(20);
 	  // stroke(255, 100);
-	
+
 	  // x[x.length - 1] = width / 2; // Set base x-coordinate
 	  // y[x.length - 1] = height; // Set base y-coordinate
 }
