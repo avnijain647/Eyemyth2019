@@ -5,8 +5,8 @@ function setup() {
 	var clientH = document.getElementById('sketch-holder').clientHeight;
 	var canvas = createCanvas(clientW, clientH);
 	canvas.parent('sketch-holder');
-	console.log(clientW + " " + clientH);
-	background(255);
+	// console.log(clientW + " " + clientH);
+	background(0);
 	mic = new p5.AudioIn();
 	mic.start();
 	fft = new p5.FFT();
@@ -20,11 +20,17 @@ function setup() {
 }
 
 function draw() {
+		background(0);
 	let spectrum = fft.analyze();
-	fill(255, 0, 0);
-	for (i = 0; i < spectrum.length; i++) {
-		 kuler = map(spectrum[i], 0, 255, 10, 150);
-	}
+	// fill(255, 255, 255);
+	// for (i = 0; i < spectrum.length; i++) {
+		 // kuler = map(spectrum[i], 210, 255, 10, 0);
+		 beginShape();
+  for (i = 0; i < spectrum.length; i++) {
+    vertex(i, map(spectrum[i], 0, 255, height, 60));
+  }
+  endShape();
+	// }
 //	rect(mouseX, mouseY, kuler, kuler);
 }
 
