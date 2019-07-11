@@ -1,33 +1,31 @@
 let mic, fft;
+var kuler;
 function setup() {
-
-  var clientW = document.getElementById('sketch-holder').offsetWidth;
-  var clientH = document.getElementById('sketch-holder').offsetHeight;
-  var canvas = createCanvas(clientW, clientH);
-  canvas.parent('sketch-holder');
- background(255);
-    mic = new p5.AudioIn();
-    mic.start();
-    fft = new p5.FFT();
-    fft.setInput(mic);
-  // createCanvas(710, 400);
-  // strokeWeight(20);
-  // stroke(255, 100);
-
-  // x[x.length - 1] = width / 2; // Set base x-coordinate
-  // y[x.length - 1] = height; // Set base y-coordinate
+	var clientW = document.getElementById('sketch-holder').clientWidth;
+	var clientH = document.getElementById('sketch-holder').clientHeight;
+	var canvas = createCanvas(clientW, clientH);
+	canvas.parent('sketch-holder');
+	console.log(clientW + " " + clientH);
+	background(255);
+	mic = new p5.AudioIn();
+	mic.start();
+	fft = new p5.FFT();
+	fft.setInput(mic);
+	  // createCanvas(710, 400);
+	  // strokeWeight(20);
+	  // stroke(255, 100);
+	
+	  // x[x.length - 1] = width / 2; // Set base x-coordinate
+	  // y[x.length - 1] = height; // Set base y-coordinate
 }
 
 function draw() {
-  background(200);
-
-  let spectrum = fft.analyze();
-
-  beginShape();
-  for (i = 0; i < spectrum.length; i++) {
-    vertex(i, map(spectrum[i], 0, 255, height, 0));
-  }
-  endShape();
+	let spectrum = fft.analyze();
+	fill(255, 0, 0);
+	for (i = 0; i < spectrum.length; i++) {
+		 kuler = map(spectrum[i], 0, 255, 10, 150);
+	}
+//	rect(mouseX, mouseY, kuler, kuler);
 }
 
 
