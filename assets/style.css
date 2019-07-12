@@ -23,25 +23,41 @@
   src: url(VT323-Regular.ttf);
 }
 
-
+html,body{
+  padding:0;
+  margin:0;
+}
 body{
-
-  background-color: #333;
-  color:#eee;
+width:100%;
+background-color: #333;
+color:#eee;
 }
 .eyemyth{
-  font-family: 'VT323-Regular', regular;
-  font-size:110px;
+  font-family: 'FiraSans-black', regular;
+  font-size:64px;
 }
 .lockup{
-  z-index: 7;
+  /* position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%); */
+  z-index: 2;
   max-width:600px;
   margin-left:auto;
   margin-right:auto;
   padding-top:20px;
-  font-family: 'FiraSans-black', regular;
+  font-family: 'FiraSans-thin', regular;
   font-size:64px;
 }
+.festival{
+  color: #FF40FF;
+}
+.mumbai,
+.dates{
+  color: #8AFE4F;
+
+}
+
 .tagline{
   max-width:600px;
   margin-left:auto;
@@ -53,9 +69,10 @@ body{
   position: fixed;
   top:0;
   left:0;
-  z-index: 0;
-width:100vw;
+  z-index: 3;
+width:100%;
 height:100vh;
+mix-blend-mode: screen;
   /* margin:20px; */
   /* width: 940px; height: 300px; */
   /* background-size: contain; */
@@ -99,32 +116,79 @@ width:100vw;
     /* background-color: blue; */
   /* width:50%; */
 }
-#mc_embed_signup{
-  padding:0;
+input{
+  width:100%;
+  /* box-sizing: border-box; */
+    border:3 solid #222;
+    border-radius: 0;
 }
-h2{
-    font-size:21px;
+#mc_embed_signup{
+  width:500px;
+height:100px;
+  position: fixed;
+  border:0 solid #222;
+  top:10px;
+  right:5px;
+  padding:0;
+    outline: none;
+}
+.newsletter_intro{
+
+    font-family: 'FiraSans-thin', regular;
+    font-size:16px;
+
+    margin-bottom:5px;
+}
+form{
+  padding: 0 !important;
+  margin:0;
 }
 #mc_embed_signup form{
-  padding:0;
-  max-width:600px;
-  margin-left:auto;
-  margin-right:auto;
+padding: 0;
+margin:0;
   z-index:3;
-  background:#333;
+  /* background:red; */
   color:#eee;
-  font-size:16px;
-    font-family: FiraSans-regular;
+  font-size:18px;
+    font-family: 'FiraSans-thin', regular;
     /* background-color: red; */
 
 }
 .newsletter{
+  outline: none;
+  /* background-color: red; */
+  font-size: 18px;
   display: flex;
   flex-wrap: nowrap;
 }
+#mc-embedded-subscribe{
+    outline: none;
+  /* background-color: blue; */
+  font-size: 18px;
+}
+.button{
+    outline: none;
+  /* background-color: blue; */
+  font-family: 'FiraSans-black', regular;
+  font-size: 18px;
+}
 .mc-field-group{
+  font-size: 18px;
   width:100%;
   /* background-color: red; */
+}
+#mce-EMAIL{
+  outline: none;
+  /* border-radius: 0px; */
+background-color: #bbb;
+/* border: 0 solid #000; */
+color: #eee;
+font-family: 'FiraSans-thin', regular;
+/* font-size: 18px; */
+}
+.main_artwork{
+  width:100vw;
+  height:100vh;
 }
 .actions{
   height:50px;
@@ -138,7 +202,7 @@ bottom:10px;
 left:0;
 z-index:4;
 font-size:16px;
-font-family: FiraCode-regular;
+font-family: 'FiraSans-black', regular;
   /* margin-bottom:50px; */
 }
 
