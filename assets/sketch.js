@@ -29,7 +29,7 @@ function draw() {
 
 		 beginShape();
   for (i = 0; i < spectrum.length; i++) {
-    vertex(i, map(spectrum[i], 0, 255, 300, 0));
+    vertex(i, map(spectrum[i], 0, 255, 600, 0));
 			// kuler = map(spectrum[i], 210, 255, 10, 0);
 			// strokeWeight(i/5000);
   }
