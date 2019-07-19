@@ -6,26 +6,40 @@ $(document).on('scroll', function() {
 
   var difference = documentHeight - windowHeight
   var percentage = 100 * pixels / difference
-if(windowWidth>400){
-    if (pixels <= 74){
-       $('.lockup').css('font-size', 90 - pixels)
+if(windowWidth>750){
+    if (pixels <= 76){
+       $('.lockup').css('font-size', 100 - pixels)
     }
-
+    else {
+       $('.lockup').css('font-size', 24 )
+    }
 
     if (pixels <= 90){
        $('.lockup').css('padding-top', 100 - pixels)
         $('.lockup').css('padding-left', 100 - pixels)
     }
+    else {
+       $('.lockup').css('padding-top', 10)
+        $('.lockup').css('padding-left', 10)
+    }
   }
-  if(windowWidth<400){
-      if (pixels <= 32){
+  if(windowWidth<750){
+      if (pixels <= 30){
          $('.lockup').css('font-size', 48 - pixels)
+          $('.festival').css('font-size', 48 - pixels )
       }
-
+      else {
+         $('.lockup').css('font-size', 18 )
+         $('.festival').css('font-size', 0 )
+      }
 
       if (pixels <= 10){
          $('.lockup').css('padding-top', 20 - pixels)
           $('.lockup').css('padding-left', 20 - pixels)
+      }
+      else {
+         $('.lockup').css('padding-top', 10)
+          $('.lockup').css('padding-left', 10)
       }
     }
     // if (pixels <= 90){
