@@ -3,7 +3,7 @@ function setup(){
     var clientW = document.getElementById('sketch-holder').clientWidth;
     var clientH = document.getElementById('sketch-holder').clientHeight;
     var canvas = createCanvas(clientW, clientH);
-    canvas.parent('sketch-holder');  
+    canvas.parent('sketch-holder');
     mic = new p5.AudioIn()
     mic.start();
     fft = new p5.FFT();
@@ -30,12 +30,12 @@ function setup() {
     var clientW = document.getElementById('sketch-holder').clientWidth;
     var clientH = document.getElementById('sketch-holder').clientHeight;
     var canvas = createCanvas(clientW, clientH);
-    canvas.parent('sketch-holder');  
+    canvas.parent('sketch-holder');
     //cnv = createCanvas(600, 600);
     mic = new p5.AudioIn()
     mic.start();
     fft = new p5.FFT();
-    fft.setInput(mic); 
+    fft.setInput(mic);
 }
 
 function draw() {
