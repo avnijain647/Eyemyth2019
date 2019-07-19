@@ -58,9 +58,6 @@ for (i = 0; i < waveform.length; i++) {
    t += Fs;
 }
 
-    console.log(f*10);
-
-
 start += incr;
 t += incr;
 }
