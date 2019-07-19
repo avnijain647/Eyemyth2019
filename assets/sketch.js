@@ -1,5 +1,4 @@
 let mic, fft;
-var kuler;
 function setup() {
 	var clientW = document.getElementById('sketch-holder').clientWidth;
 	var clientH = document.getElementById('sketch-holder').clientHeight;
@@ -25,7 +24,7 @@ function draw() {
 	let spectrum = fft.analyze();
 	 stroke(200);
 
-// fill(200);
+fill(200);
 
 		 beginShape();
   for (i = 0; i < spectrum.length; i++) {
