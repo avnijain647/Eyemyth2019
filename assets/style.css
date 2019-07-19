@@ -22,6 +22,10 @@
   font-family: VT323-Regular;
   src: url(VT323-Regular.ttf);
 }
+@font-face {
+  font-family: Terminus-Regular;
+  src: url(TerminusTTF-4.47.0.ttf);
+}
 
 html,body{
   width:100vw;
@@ -181,7 +185,7 @@ margin:0;
   font-size: 21px;
   display: flex;
   flex-wrap: nowrap;
-  /* align-items: center; */
+  align-items: flex-start;
 }
 #mc-embedded-subscribe{
   background-color: #666 !important;
@@ -220,7 +224,9 @@ height:40px !important;
 .email{
     /* height:40px !important; */
   /* padding-left: 0 !important; */
-  padding: 7px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  padding-right: 7px !important;
   border: 0 solid black !important;
   outline: none !important;
   border-radius: 0 !important;
@@ -344,7 +350,7 @@ color: #85BDFF;
   position: absolute;
   text-align: right;
   bottom:0;
-font-family: 'Ubuntu Mono', monospace;
+font-family: 'Terminus-Regular';
   right:0;
   font-size:110px;
 /* text-align: right; */
@@ -410,7 +416,7 @@ z-index:4;
 font-size:16px;
 font-family: 'FiraSans-black', regular;
 padding-top:20px;
-  padding-bottom:20px;
+  padding-bottom:80px;
 }
 
 .tickets{
@@ -523,6 +529,16 @@ padding-left:20px;
   }
   #mc-embedded-subscribe{
   width:100px!important;
+}
+.mail{
+
+display: block;
+padding:10px;
+  color:#fff;
+
+}
+.mail a{
+  display: block;
 }
 
 }
