@@ -55,7 +55,7 @@ color:#eee;
 }
 
 .eyemyth{
-  font-family: 'FiraSans-black', regular;
+  /* font-family: 'FiraSans-black', regular; */
   display: inline-block;
   color: #fff;
 }
@@ -360,7 +360,7 @@ font-family: 'Terminus-Regular';
   bottom:0;
   left:0;
   font-size:90px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono';
 }
 .line4{
   mix-blend-mode: difference;
@@ -370,7 +370,7 @@ font-family: 'Terminus-Regular';
   bottom:0;
 font-size:120px;
     right:0;
-    font-family: 'VT323', monospace;
+    font-family: 'VT323';
 /* text-align: right; */
 }
 .line5{
@@ -380,7 +380,7 @@ font-size:120px;
   position: absolute;
   bottom:0;
   left:0;
-  font-family: 'Nova Mono', monospace;
+  font-family: 'Nova Mono';
 
 }
 .archive{
