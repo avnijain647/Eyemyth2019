@@ -228,14 +228,40 @@ font-family: 'Montserrat', sans-serif;
   padding: 10px;
 margin-top: 20px;
 margin-bottom: 20px;
+}
+.jello1{
+  animation: jello 2s infinite;
+  animation-delay: 1s;
   -webkit-animation-name: jello;
   animation-name: jello;
   -webkit-transform-origin: center;
   transform-origin: center;
-animation: jello 2s infinite;
 }
-.jelloanimate{
+.jello2{
   animation: jello 2s infinite;
+  animation-delay: 1.5s;
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.jello3{
+  animation: jello 2s infinite;
+  animation-delay: 2s;
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.jello4{
+  animation: jello 2s infinite;
+  animation-delay: 2.5s;
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
 }
 @-webkit-keyframes jello {
   from,
@@ -348,6 +374,7 @@ a{
   color :grey;
 }
 .yellowfont{
+  font-size: 50px;
   padding: 10px;
   color: #F8E71C;
 }
@@ -652,7 +679,9 @@ line-height: 1.6;
 .green{
     /* padding-top:80px; */
 }
-
+.yellowfont{
+  font-size: 100px;
+}
   .intro{
     background-color: #FF40FF;
     font-family: 'Montserrat', sans-serif;
