@@ -542,6 +542,11 @@ color: #85BDFF;
   /* font-family: 'Nova Mono'; */
 
 }
+.white{
+width:100%;
+background-color: #fff;
+color: #333;
+}
 .archive{
   text-align: center;
   background-color: #fff;
@@ -583,14 +588,14 @@ padding-top:20px;
 }
 .slideshow{
 position: relative;
-height: 32vh;
+height: 70vh;
 width:100%;
 overflow: hidden;
 /* background: blue; */
 }
 .slideshowbox{
-  height: 40vh;
-  width:400vw;
+  height: 70vh;
+  width:360vw;
   /* background: red; */
   left: 0;
   top:10px;
@@ -612,8 +617,8 @@ transform: translateX(0);
 }
 .slideshowbox img{
   /* background: green; */
-  width:80vw;
-  height: 25vh;
+  width:70vw;
+  height: 70vh;
 }
 .tickets{
   font-size: 64px;
@@ -756,7 +761,21 @@ background-color: black;
   .line4{
     font-size:27px;
   }
-
+  .slideshow{
+  position: relative;
+  height: 32vh;
+  width:100%;
+  overflow: hidden;
+  /* background: blue; */
+  }
+  .slideshowbox{
+  width:400vw;
+  }
+  .slideshowbox img{
+    /* background: green; */
+    width:80vw;
+    height: 25vh;
+  }
   .newsletter_intro{
   margin-left:10px;
   }
@@ -764,6 +783,7 @@ background-color: black;
   #mc-embedded-subscribe{
   width:100px!important;
 }
+
 .tickets{
   font-size: 27px;
 }
