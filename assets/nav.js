@@ -3,6 +3,7 @@ $(document).on('scroll', function() {
   var pixels = $(document).scrollTop()
   var documentHeight = $(document).height()
   var windowHeight = $(window).height()
+var windowWidth = $(window).width()
 
   var difference = documentHeight - windowHeight
   var percentage = 100 * pixels / difference
@@ -24,18 +25,20 @@ if(windowWidth>750){
     }
   }
   if(windowWidth<750){
-      if (pixels <= 30){
-         $('.lockup').css('font-size', 48 - pixels)
-          $('.festival').css('font-size', 48 - pixels )
+      if (pixels <= 32){
+         $('.lockup').css('font-size', 50 - pixels)
+          $('.festival').css('font-size', 27 - pixels )
+            $('.mumbai').css('font-size', 16 - pixels )
       }
       else {
-         $('.lockup').css('font-size', 18 )
+         $('.lockup').css('font-size', 16 )
          $('.festival').css('font-size', 0 )
+           $('.mumbai').css('font-size', 0 )
       }
 
       if (pixels <= 10){
-         $('.lockup').css('padding-top', 20 - pixels)
-          $('.lockup').css('padding-left', 20 - pixels)
+         $('.lockup').css('padding-top', 30 - pixels)
+          $('.lockup').css('padding-left', 30 - pixels)
       }
       else {
          $('.lockup').css('padding-top', 10)

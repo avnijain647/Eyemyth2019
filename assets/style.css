@@ -28,22 +28,23 @@
 }
 
 html,body{
-  width:100vw;
+  width:100%;
   padding:0;
   /* padding-bottom:80px; */
   margin:0;
 }
 body{
-
+width:100vw;
 background-color: black;
 color:#eee;
 }
 
 .lockup{
-  /* position: fixed;
+  position: fixed;
   top:0;
-  left:0; */
-  max-width:900px;
+  left:0;
+  /* max-width:900px; */
+  text-align: center;
   z-index: 2;
   padding-top:100px;
   padding-left:100px;
@@ -55,16 +56,20 @@ color:#eee;
 }
 
 .eyemyth{
+  padding: 0;
   /* font-family: 'FiraSans-black', regular; */
   display: inline-block;
+  font-weight: 900;
   color: #fff;
 }
 .festival{
+    padding: 0;
   display: inline-block;
   color: #FF40FF;
 }
 .mumbai,
 .dates{
+    padding: 0;
   display: inline-block;
   color: #8AFE4F;
 
@@ -75,28 +80,21 @@ color:#eee;
   top:0;
   left:0;
   z-index: 1;
-  width:100vw;
+  width:100%;
   height:48px;
 }
 .void{
     background-color: black;
-    width:100vw;
+    width:100%;
     height:100vh;
 }
 
-.tagline{
-  max-width:600px;
-  margin-left:auto;
-  margin-right:auto;
-  font-family: 'FiraSans-thin', regular;
-  font-size:32px;
-}
 #sketch-holder{
   position: fixed;
   top:0;
   left:0;
   z-index: 0;
-width:100%;
+width:100vw;
 height:100vh;
 mix-blend-mode: difference;
   /* margin:20px; */
@@ -106,42 +104,7 @@ mix-blend-mode: difference;
   /* background-color: red; */
   opacity: .7;
 }
-.themes{
-  position: fixed;
-  top:0;
-  left:20px;
-  right:20px;
-  line-height: 2;
-height: 90vh;
-width:100vw;
-  font-family: 'FiraCode-regular', regular;
-  font-size:16px;
 
-}
-.theme1{
-  height: 100%;
-  top:0;
-  left:75%;
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-around;
-  /* background-color: red; */
-  /* width:50%; */
-}
-.theme2{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-around;
-  top:0;
-  right:50px;
-  height: 100%;
-  position: absolute;
-    /* background-color: blue; */
-  /* width:50%; */
-}
 
 #mc_embed_signup{
   z-index:4;
@@ -157,7 +120,7 @@ height:80px;
 }
 .newsletter_intro{
 /* background-color: #666; */
-    font-family: 'FiraSans-thin', regular;
+    font-family: 'Montserrat', sans-serif;
     font-size:15px;
 margin-left:25px;
 padding-top: 5px;
@@ -175,7 +138,7 @@ margin:0;
   /* background-color:red; */
   color:#eee;
   font-size:18px;
-    font-family: 'FiraSans-thin', regular;
+    font-family: 'Montserrat', sans-serif;
     /* background-color: red; */
 
 }
@@ -240,7 +203,7 @@ height:40px !important;
 background-color: #666;
 /* border: 0 solid #000; */
 color: #eee;
-font-family: 'FiraSans-thin', regular;
+font-family: 'Montserrat', sans-serif;
 
 }
 #mce-responses,
@@ -248,13 +211,26 @@ font-family: 'FiraSans-thin', regular;
   /* background-color: #333; */
 }
 .main_artwork{
-  width:100vw;
+  padding:50px;
+  /* width:100%; */
   height:100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  color: #000;
   background-color: #FF40FF;
     /* background-image: url(main_artwork.jpeg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: cover; */
+}
+.green{
+background-color: #8AFE4F;
+}
+.yellow{
+background-color: #F8E71C;
+}
+.blue{
+background-color: #37A7FF;
 }
 .intro{
 
@@ -262,10 +238,10 @@ font-family: 'FiraSans-thin', regular;
   overflow: hidden;
   text-align: left;
   max-width:900px;
-color: #FF40FF;
+
   margin-left: auto;
   margin-right: auto;
-  font-family: 'FiraSans-thin', regular;
+  font-family: 'Montserrat', sans-serif;
   font-size: 64px;
   line-height: 1.2;
   /* padding:20px; */
@@ -334,6 +310,7 @@ color: #85BDFF;
 
  */
 .line1{
+  color: #FF40FF;
   font-weight: bold;
   mix-blend-mode: difference;
   position: absolute;
@@ -344,17 +321,19 @@ color: #85BDFF;
   font-family: 'B612 Mono', monospace;
 }
 .line2{
+  color: #FF40FF;
   mix-blend-mode: difference;
   text-transform: capitalize;
   position: absolute;
-  text-align: right;
+  text-align: left;
   bottom:0;
 font-family: 'Terminus-Regular';
-  right:0;
+left:0;
   font-size:110px;
 /* text-align: right; */
 }
 .line3{
+  color: #FF40FF;
   mix-blend-mode: difference;
   text-transform: capitalize;
   position: absolute;
@@ -364,17 +343,19 @@ font-family: 'Terminus-Regular';
   font-family: 'Space Mono';
 }
 .line4{
+  color: #FF40FF;
   mix-blend-mode: difference;
   text-transform: capitalize;
   line-height: .8;
   position: absolute;
   bottom:0;
 font-size:120px;
-    right:0;
+    left:0;
     font-family: 'VT323';
 /* text-align: right; */
 }
 .line5{
+  color: #FF40FF;
   mix-blend-mode: difference;
   font-size:90px;
   text-transform: capitalize;
@@ -386,22 +367,28 @@ font-size:120px;
 }
 .archive{
   text-align: center;
+  background-color: #fff;
   z-index:20;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'FiraSans-thin', regular;
+  font-family: 'Montserrat', sans-serif;
   font-size: 64px;
   line-height: 1.2;
+  color:#333;
   margin-bottom: 20px;
 }
 .archive a{
   display: block;
-  font-family: 'FiraSans-black', regular;
+  font-family: 'Montserrat', sans-serif;
   padding-top:20px;
 text-decoration: none;
-color:#fff;
+color:#37A7FF;
   font-size: 64px;
+}
+.archive img{
+  width:300px;
+height:200px;
 }
 .actions{
   z-index:20;
@@ -409,39 +396,34 @@ color:#fff;
   max-width:900px;
   margin-left: auto;
   margin-right: auto;
-  /* flex-direction: row; */
+  background-color: #fff;
 
 z-index:4;
 font-size:16px;
-font-family: 'FiraSans-black', regular;
+font-family: 'Montserrat', sans-serif;
 padding-top:20px;
   padding-bottom:80px;
 }
 
 .tickets{
   font-size: 64px;
-  font-family: 'FiraSans-thin', regular;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom:40px;
   text-align: center;
 width:100%;
-/* background-color: red; */
-   /*  */
-/* border-top: 1px solid #8cf85a;
-border-bottom: 1px solid #8cf85a; */
+
   color:#8cf85a;
 }
 
 .social1{
-  /* width:100%; */
-  /* height:100%; */
+
 
     margin:0;
     padding:0;
-  /* border: 1px solid #3399ff; */
-  /* background-color: #3399ff; */
+
 }
 .social1 img{
-/* background-color: #3399ff; */
+
   padding-left:10px;
   padding-right:10px;
   height:24px;
@@ -455,9 +437,8 @@ align-items: center;
 justify-content: space-around;
   /* width:32%; */
   /* background-color: #3399ff; */
-  color:#fff;
-  /* border-top:1px solid #3399ff; */
-    /* border-bottom:1px solid #3399ff; */
+  color:#333;
+
 }
 
 .credit img{
@@ -467,36 +448,60 @@ justify-content: space-around;
 .credit{
 
   /* text-align: center; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
     /* width:29%; */
  /* background-color: green; */
   font-size:15px;
   /* padding:11px 11px 11px 0px; */
-  font-family: 'FiraSans-thin', regular;
-  color:#fff;
-  /* display: block; */
-  /* background-color: #456fff; */
+  font-family: 'Montserrat', sans-serif;
+  color:#333;
+
 }
 
 @media(max-width:750px) {
+
   .lockup{
+    /* height:70vh; */
+    line-height: 1;
 padding-top:20px;
+/* background-color: green; */
+padding-bottom:20px;
+margin:0;
 padding-left:20px;
-  font-size:48px;
-    width:300px;
+padding-right:20px;
+  font-size:50px;
+    /* width:100%; */
+
+    padding-right:0px;
+
+
+  }
+  .festival{
+    display: block;
+    font-size:27px;
+  }
+
+  .mumbai,
+  .dates{
+    /* line-height: 1.6; */
+    padding-top:10px;
+    display: block;
+    font-size:17px;
   }
   .lockupvoid{
     height:24px;
   }
 .main_artwork{
-  width:100vw;
-  height:100vh;
+  padding:10px;
+    font-size: 27px;
 
+  height:100vh;
 }
+
   .intro{
     background-color: #FF40FF;
-    font-family: 'FiraSans-thin', regular;
-    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
     line-height: 1.2;
 background-color: black;
 max-width:300px;
@@ -522,21 +527,13 @@ max-width:300px;
   height:150px;
   /* background-color: yellow; */
   }
-  .line1{
-    font-size:42px;
-  }
-  .line2{
-    font-size:42px;
-  }
-  .line3{
-    font-size:42px;
-  }
+  .line1,
+  .line2,
+  .line3,
   .line4{
-    font-size:42px;
+    font-size:27px;
   }
-  .line5{
-    font-size:42px;
-  }
+
   .newsletter_intro{
   margin-left:10px;
   }
@@ -544,10 +541,13 @@ max-width:300px;
   #mc-embedded-subscribe{
   width:100px!important;
 }
+.tickets{
+  font-size: 27px;
+}
 .mail{
 display: block;
-
-  color:#fff;
+  background-color: #fff;
+  color:#333;
   text-align: center;
   max-width:900px;
   margin-left: auto;
@@ -568,5 +568,11 @@ display: block;
 .credit img{
   padding-right:0;
   height:12px;
+}
+.archive{
+  font-size: 27px;
+}
+.archive a{
+  font-size: 18px;
 }
 }
