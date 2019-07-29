@@ -23,6 +23,13 @@ if(windowWidth>750){
        $('.lockup').css('padding-top', 10)
         $('.lockup').css('padding-left', 10)
     }
+    if (pixels >= 500){
+       $('.jello').addClass('.jelloanimate')
+
+    }
+    else {
+
+    }
   }
   if(windowWidth<750){
       if (pixels <= 32){
