@@ -581,7 +581,40 @@ font-family: 'Montserrat', sans-serif;
 padding-top:20px;
   padding-bottom:80px;
 }
-
+.slideshow{
+position: relative;
+height: 32vh;
+width:100%;
+overflow: hidden;
+/* background: blue; */
+}
+.slideshowbox{
+  height: 40vh;
+  width:1280px;
+  /* background: red; */
+  left: 0;
+  top:10px;
+  position: absolute;
+  display:flex;
+  flex-wrap:wrap;
+  animation: slideshow 40s linear infinite;
+}
+@keyframes slideshow {
+  0%{
+transform: translateX(0);
+  }
+  50%{
+transform: translateX(-75%);
+  }
+  100%{
+transform: translateX(0);
+  }
+}
+.slideshowbox img{
+  /* background: green; */
+  width:80vw;
+  height: 25vh;
+}
 .tickets{
   font-size: 64px;
   font-family: 'Montserrat', sans-serif;
