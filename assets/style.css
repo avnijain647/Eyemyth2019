@@ -590,7 +590,7 @@ overflow: hidden;
 }
 .slideshowbox{
   height: 40vh;
-  width:1280px;
+  width:400vw;
   /* background: red; */
   left: 0;
   top:10px;
