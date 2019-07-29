@@ -32,12 +32,13 @@ if(windowWidth>750){
       }
       else {
          $('.lockup').css('font-size', 16 )
+          // $('.lockup').css('height', 48 )
          $('.festival').css('font-size', 0 )
            $('.mumbai').css('font-size', 0 )
       }
 
       if (pixels <= 10){
-         $('.lockup').css('padding-top', 30 - pixels)
+         $('.lockup').css('padding-top', 210 - pixels)
           $('.lockup').css('padding-left', 30 - pixels)
       }
       else {
