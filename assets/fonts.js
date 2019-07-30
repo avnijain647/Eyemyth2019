@@ -3,13 +3,16 @@
 
 $(".yellowfont").css("font-family", function() {
 
-
+  // var words = ["DESIGN RESEARCH FOR DESIGNERS 101", "Game Engine", "Realtime Graphics", "CONNECTED CREATIVITY", "Digital Art", "ETHICS FOR A NEW GENERATION", "Digital Sculpting", "AI FOR ARTISTS & DESIGNERS", "Projectionism", "RESPONSIBLE FUTURISM", "Transmedia Production", "THE LOSS OF CREATIVITY", "Immersive Media" "GENERATIVE ART TOOLKIT" "Web Comics" "SPECULATIVE DESIGN 201" "Media Installations"  "BEING INDIE & FINDING SUCCESS" "Sensors & Interactivity" "INTELLECTUAL PROPERTY"
+  // "DESIGN FOR SOCIAL CHANGE","STUDYING ABROAD IN LOCAL TIMES"];
   var textArray = [
       'Space Mono',
       'VT323'
   ];
 
   var rando = Math.floor(Math.random()*textArray.length);
+  // document.getElementsByClassName('yellowfont')[0].innerHTML = words[rando];
+
   return textArray[rando];
 
 });

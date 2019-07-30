@@ -8,23 +8,20 @@ var windowWidth = $(window).width()
   var difference = documentHeight - windowHeight
   var percentage = 100 * pixels / difference
 if(windowWidth>750){
-  $('.bar').css('width', 80 + percentage)
+  $('.bar').css('width', 40 + percentage )
     if (pixels <= 216){
        $('.eyemyth').css('font-size', 200 - pixels)
         $('.festival').css('font-size', 150 - pixels * 5)
-          // $('.festival1').css('max-width', 800 - pixels * 5)
-          // $('.festival2').css('max-width', 800 - pixels * 5)
-        // $('.festival2').css('font-size', 160 - pixels * 5)
+
         $('.dates').css('font-size', 50 - pixels)
 
         $('.mumbai').css('font-size', 50 - pixels * 2)
     }
     else {
-      // $('.festival1').css('max-width', 0)
-      // $('.festival2').css('max-width', 0)
+
        $('.eyemyth').css('font-size', 24 )
        $('.festival').css('font-size', 0)
-       // $('.festival2').css('font-size', 0)
+
        $('.dates').css('font-size', 24)
        $('.mumbai').css('font-size', 0)
 
@@ -47,48 +44,79 @@ if(windowWidth>750){
     }
   }
   if(windowWidth<750){
-      if (pixels <= 32){
-         $('.lockup').css('font-size', 50 - pixels)
-          $('.festival').css('font-size', 27 - pixels )
-            $('.mumbai').css('font-size', 16 - pixels )
+      $('.bar').css('width', 5 + percentage )
+      if (pixels <= 30){
+         $('.eyemyth').css('font-size', 60 - pixels)
+          $('.festival').css('font-size', 30 - pixels )
+            $('.mumbai').css('font-size', 21 - pixels )
+            $('.dates').css('font-size', 21 - pixels )
       }
       else {
-         $('.lockup').css('font-size', 16 )
-          // $('.lockup').css('height', 48 )
+        $('.eyemyth').css('font-size', 36)
          $('.festival').css('font-size', 0 )
            $('.mumbai').css('font-size', 0 )
+           $('.dates').css('font-size', 21  )
       }
 
       if (pixels <= 10){
          $('.lockup').css('padding-top', 210 - pixels)
-          $('.lockup').css('padding-left', 30 - pixels)
+
       }
       else {
          $('.lockup').css('padding-top', 10)
-          $('.lockup').css('padding-left', 10)
+
       }
     }
-    // if (pixels <= 90){
-    //    $('.lockup').css('height', 100  - pixels)
-    //
-    // }
-  // var pixellockup = pixels + 64
-
-
- // $('.lockup').css('top', 100 - pixels )
- // $('.lockup').css('left', 100 - pixels )
-  // $('.lockup').css('font-size', 84 - pixellockup)
-
-  // for (var pixels = $(document).scrollTop(); pixels<= 64; pixels++){
-  //   $('.lockup').css('font-size', 84 - pixels)
-  //
-  // }
-  // for (var pixel = 1; pixel<= 80; pixel++){
-  //   $('.lockup').css('top', 100 - pixel )
-  //   $('.lockup').css('left', 100 - pixel )
-
-  // $('.festival').css('font-size', 84 - pixelfestival + 84 )
-   // $('.bar').css('width', percentage + 'vh')
- //   $('.project_name').css('opacity', 1 - pixels / 300)
 
  })
+
+
+
+
+
+
+
+
+      var doc = document.getElementById("#ticker");
+      // var color = ["black", "blue", "brown", "green"];
+      var textArray = [
+          'Space Mono',
+          'B612',
+          'Nova Mono',
+          'Ubuntu Mono',
+          'VT323'
+      ];
+      var i = 0;
+      function change() {
+        // doc.style.fontfamily = textArray[i];
+        $(".yellowfont").css("font-family", textArray[i]);
+        i++;
+
+        if(i > textArray.length - 1) {
+          i = 0;
+        }
+      }
+      setInterval(change, 2000);
+
+    var speed = 50;
+       var first = 0;
+       var pause = 2000;
+    function tick() {
+        first = $('ul#ticker li:first').html();
+        $('ul#ticker li:first').animate({
+            height: 0
+        }, speed).hide('medium', function() {
+            $(this).remove();
+
+            last = '<li>' + first + '</li>';
+            $('ul#ticker').append(last);
+
+        });
+    }
+
+    $('ul#ticker').click(function() {
+
+        tick();
+        return false;
+    });
+    setInterval(tick, pause);

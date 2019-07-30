@@ -22,9 +22,7 @@
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-<script  src="assets/p5.js"></script>
-<script  src="assets/p5.sound.js"></script>
-  <script  src="assets/sketch.js"></script>
+
 <script  src="assets/jquery.js"></script>
 <script  src="assets/nav.js"></script>
 <!-- <script src="assets/fonts.js"></script> -->
@@ -58,13 +56,12 @@
 <div class="lockupvoid"></div>
 <div class="void"></div>
 
-
+<div class="blockpink">
 <div class="main_artwork">
 A festival for new media art explorations is back with <b>3 DAYS AND NIGHTS OF
 DELICIOUS STORYTELLING.</b> This year’s festival brings alive the exciting forays into the future of
-<!-- We’re coming together to imagine Indian media of the
-future and explore an exciting new world of unusual tools and ideas from India, South Asia & beyond! -->
 </div>
+
 <div class="intro pinkfont">
 
 <div class="intro_block ">
@@ -85,20 +82,12 @@ future and explore an exciting new world of unusual tools and ideas from India, 
 <div class="intro_img"> <img src="assets/digital-heritage.gif">
 <div class="intro_line line4">DIGITAL HERITAGE</div></div>
 </div>
-<!-- <div class="intro_block ">
-
-  <div class="intro_img"> <img src="assets/conceptart.png">
-
-    <div class="intro_line line5">CONCEPT ART</div></div>
-</div> -->
-
-
 </div>
-
+</div>
 <div class="main_artwork green">
 <div class="green1">EYEMYTH </div>
 <div class="green2">WEEKEND </div>
-<div class="green3">29 NOV - 1 DEC</div>
+<!-- <div class="green3">29 NOV - 1 DEC</div> -->
 </div>
 <div class="intro greenfont">
 <div class="jello jello1">FUTURE FICTION<a>MASSIVE MIXER</a></div>
@@ -113,29 +102,33 @@ Join us as we bring together artists and mentors to explore the new wave of art,
 technology and media expressions, and its convergence in the Indian context.
 </div>
 <div class="intro yellowfont">
-    <div class="words">DESIGN RESEARCH FOR DESIGNERS 101</div>
-  <!-- <div>Game Engine</div>
+    <div class="words">
+      <ul id="ticker">
+        <li>DESIGN RESEARCH FOR DESIGNERS 101</li>
+        <li>Game Engine</li>
+         <li>Realtime Graphics</li>
+           <li>CONNECTED CREATIVITY</li>
+         <li>Digital Art</li>
+          <li>ETHICS FOR A NEW GENERATION</li>
+         <li>Digital Sculpting</li>
+         <li>AI FOR ARTISTS & DESIGNERS</li>
+         <li>Projectionism</li>
+         <li>RESPONSIBLE FUTURISM</li>
+         <li>Transmedia Production</li>
+          <li>THE LOSS OF CREATIVITY</li>
+         <li>Immersive Media</li>
+          <li>GENERATIVE ART TOOLKIT</li>
+         <li>Web Comics</li>
+         <li>SPECULATIVE DESIGN 201</li>
+         <li>Media Installations</li>
+          <li>BEING INDIE & FINDING SUCCESS</li>
+        <li>Sensors & Interactivity</li>
+         <li>INTELLECTUAL PROPERTY</li>
+            <li>DESIGN FOR SOCIAL CHANGE</li>
+              <li>STUDYING ABROAD IN LOCAL TIMES</li>
+      </ul>
+    </div>
 
-   <div>Realtime Graphics</div>
-     <div>CONNECTED CREATIVITY</div>
-   <div>Digital Art</div>
-    <div>ETHICS FOR A NEW GENERATION</div>
-   <div>Digital Sculpting</div>
-   <div>AI FOR ARTISTS & DESIGNERS</div>
-   <div>Projectionism</div>
-   <div>RESPONSIBLE FUTURISM</div>
-   <div>Transmedia Production</div>
-    <div>THE LOSS OF CREATIVITY</div>
-   <div>Immersive Media</div>
-     <div>GENERATIVE ART TOOLKIT</div>
-   <div>Web Comics</div>
-   <div>SPECULATIVE DESIGN 201</div>
-   <div>Media Installations</div>
-    <div>BEING INDIE & FINDING SUCCESS</div>
-   <div>Sensors & Interactivity</div>
-   <div>INTELLECTUAL PROPERTY</div>
-      <div>DESIGN FOR SOCIAL CHANGE</div>
-        <div>STUDYING ABROAD IN LOCAL TIMES</div> -->
 </div>
 
 <!-- <div class="main_artwork blue">
@@ -159,13 +152,13 @@ technology and media expressions, and its convergence in the Indian context.
 
 <div class="white">
 <div class="tickets">
-More information coming soon. Watch this space.
+More information & tickets coming soon. Watch this space.
 </div>
 <div id="mc_embed_signup">
 <form action="https://unboxfestival.us3.list-manage.com/subscribe/post?u=623811122df8844646b5f4788&amp;id=d859ed6c75"
 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<div class="newsletter_intro">Join our mailing list for festival updates.</div>
+	<div class="newsletter_intro">Stay connected for festival updates.</div>
 
     <div class="newsletter">
 <div class="mc-field-group">
@@ -175,7 +168,7 @@ method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
 
     <div style="position: absolute; left: -5000px;" aria-hidden="true">
       <input type="text" name="b_623811122df8844646b5f4788_d859ed6c75" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Follow Us" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="JOIN" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
     <div id="mce-responses" class="clear">
   		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -185,9 +178,15 @@ method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
 
 </form>
 </div>
-<div class="archive">Past Editions
-<a href="https://eyemyth.unboxfestival.com/"target="_blank"><img src="assets/eyemyth2017.jpg">2017</a>
-<a href="http://eyemyth2016.unboxfestival.com/"target="_blank"><img src="assets/eyemyth2016.jpg">2016</a>
+<div class="partner">OUR PARTNERS & SPONSORS
+<a href="https://eyemyth.unboxfestival.com/"target="_blank" class="partner1"><img src="assets/eyemyth2017.jpg"></a>
+<a href="http://eyemyth2016.unboxfestival.com/"target="_blank" class="partner2"><img src="assets/eyemyth2016.jpg"></a>
+<a href="http://eyemyth2016.unboxfestival.com/"target="_blank" class="partner2">sample images</a>
+
+</div>
+<div class="archive">PAST EDITIONS
+<a href="https://eyemyth.unboxfestival.com/"target="_blank" class="archive1"><img src="assets/eyemyth2017.jpg">2017</a>
+<a href="http://eyemyth2016.unboxfestival.com/"target="_blank" class="archive2"><img src="assets/eyemyth2016.jpg">2016</a>
 </div>
 
 
@@ -196,11 +195,11 @@ method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
 
 <div class="mail">
 
-<a href:"mailto:hello@futurefiction.in">hello@futurefiction.in</a>
+  <a href:"mailto:hello@futurefiction.in">hello@futurefiction.in</a>
   <a class="social1"><img src="assets/facebook.svg"></a>
   <a class="social1"><img src="assets/instagram.svg"></a>
   <a class="social1"><img src="assets/twitter.svg"></a>
-  <div class="credit">Produced by <a href="https://www.futurefiction.in/"target="_blank"> <img src="assets/ff_logotype.svg"></a> & UnBox Cultural Futures</div>
+  <div class="credit">Produced by<a href="https://www.futurefiction.in/"target="_blank"><img src="assets/ff_logotype.svg"></a>& UnBox Cultural Futures</div>
 
 </div>
 
@@ -210,7 +209,9 @@ method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
 
 </footer>
 </div>
-
+<!-- <script  src="assets/p5.js"></script>
+<script  src="assets/p5.sound.js"></script>
+  <script  src="assets/sketch.js"></script> -->
 
 <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 -->
