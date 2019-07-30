@@ -151,7 +151,7 @@ width:80px;
 .void{
     background-color: black;
     width:100%;
-    height:100vh;
+    height:50vh;
 }
 
 #sketch-holder{
@@ -268,14 +268,37 @@ font-family: 'Montserrat', sans-serif;
 .main_artwork{
   /* padding:10px; */
   width:100%;
-  height:100vh;
+  /* height:50vh; */
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   line-height: 2;
   color: #000;
   background-color: #FF40FF;
-  font-weight: 300;
+  font-weight: 500;
 
+}
+.intropink{
+  /* display: inline; */
+  padding :50px;
+}
+.intropink a {
+  background-color: black;
+  color:#FF40FF;
+  display: inline;
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 400;
+}
+.introyellow{
+  padding :50px;
+}
+.introyellow a {
+  background-color: black;
+  color:#F8E71C;
+  display: inline;
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 400;
 }
 .blockpink{
   /* display: flex;
@@ -387,16 +410,18 @@ margin-bottom: 20px; */
   margin-bottom: 20px;
 }
 .pinkfont{
+  /* background-color: white !important; */
 color:#FF40FF;
 }
 b{
+
   /* font-family: 'VT323', monospace; */
 }
 .greenfont{
-  max-width:900px;
+  /* max-width:900px; */
   margin-left:auto;
   margin-right:auto;
-font-size: 40px;
+/* font-size: 40px; */
   line-height: .5;
 color:#8AFE4F;
 }
@@ -406,20 +431,21 @@ a{
 }
 .yellowfont{
     /* font-family: 'Space Mono'; */
-  /* background-color:red; */
-  height:120px;
-  font-size: 50px;
-  line-height: 1.2 !important;
-  /* padding: 10px; */
+  background-color:#000;
+  height:250px;
+  font-size: 60px !important;
+  line-height: 1 !important;
+/* width:100% !important; */
+  /* background-color:#F8E71C; */
   color: #F8E71C;
 }
 ul{
   list-style-type: none;
   /* background-color:blue; */
-  height: 80px;
+  height: 200px;
 }
 li{
-
+height:250px;
   line-height: 1.6 !important;
   /* background-color:green; */
 }
@@ -430,10 +456,10 @@ li{
 
 .green{
   font-size: 200px !important;
-  height:80vh;
+  /* height:80vh; */
   /* padding: 40px; */
 background-color: #8AFE4F;
-font-weight: 900;
+font-weight: 900 !important;
 }
 .green1{
   line-height: .8;
@@ -455,6 +481,7 @@ font-weight: 900;
   font-weight: 300;
 }
 .yellow{
+  color: #000;
 background-color: #F8E71C;
 }
 .blue{
@@ -474,95 +501,128 @@ font-weight: 900;
   line-height: .8;
   /* padding-bottom: 50px; */
 }
-.intro_line{
-text-transform: capitalize;
-  /* width:900px;
-  height:100px;
-
- */
-
-
- /* background-color: black; */
-  /* background-color: yellow; */
-/* font-family: 'FiraSans-black', regular; */
+.intro_line1,
+.intro_line2,
+.intro_line3,
+.intro_line4{
+  position: absolute;
+  bottom:0px;
+  left:0;
+  font-size:120px;
+  width:100%;
+}
+.intro_line1{
+  /* background-color: blue; */
+  /* animation: slide1 24s linear infinite; */
+}
+.intro_line2{
+  /* animation: slide2 30s linear infinite; */
+}
+.intro_line3{
+  /* animation: slide1 27s linear infinite; */
+}
+.intro_line4{
+  /* animation: slide2 15s linear infinite; */
 }
 .intro_block:nth-child(even){
   /* float:right; */
 }
-.trans{
-  /* padding-left: 50px; */
-}
-.intro_block{
-  /* width:900px;
-  height:480px;
-position: relative; */
-  /* float:left; */
-  /* display:block; */
 
-  /* display:flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items:  center; */
+.intro_block{
+  width:100%;
+  height:250px;
+  position: relative;
   background-color: black;
 }
 .intro_img {
-  position: relative;
   width:100%;
-  height:180px;
+  height:250px;
 background-size: cover;
-
 }
 
 .intro_img img{
-
+    mix-blend-mode: color-dodge;
   width:100%;
   height:800px;
-
-
 }
-/* .intro_img:active{
-  height: 200px;
-} */
+.line1:hover{
+  /* font-weight: 900; */
+  mix-blend-mode: lighten;
+  /* color: #FF40FF; */
+}
+.line2:hover{
+  /* font-weight: 900; */
+  mix-blend-mode: lighten;
+  /* color: #FF40FF; */
+}
 
+.line3:hover{
+  /* font-weight: 900; */
+  mix-blend-mode: lighten;
+  /* color: #FF40FF; */
+}
+.line4:hover{
+  /* font-weight: 900; */
+  mix-blend-mode: lighten;
+  /* color: #FF40FF; */
+}
+@keyframes slide1 {
+0%{
+  /* font-size:120%; */
+left:-100%;
+}
+
+100%{
+  /* font-size:120%; */
+left:100%;
+}
+}
+@keyframes slide2 {
+0%{
+  /* font-size:120%; */
+left:100%;
+}
+
+100%{
+  /* font-size:120%; */
+left:-100%;
+}
+}
 .line1{
-  color: #FF40FF;
-
-  mix-blend-mode: color-dodge;
-  position: absolute;
-  bottom:10px;
-  left:10px;
-  font-size:80px;
-  text-transform: capitalize;
-  /* font-family: 'B612 Mono', monospace; */
+    font-weight: 900;
+    font-size:50px;
 }
 .line2{
+    font-weight: 900;
   color: #FF40FF;
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: color-dodge; */
   text-transform: capitalize;
   position: absolute;
   text-align: left;
   bottom:10px;
   left:10px;
-  font-size:80px;
+  font-size:50px;
 /* text-align: right; */
 }
 .line3{
+  font-weight: 900;
   color: #FF40FF;
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: color-dodge; */
   text-transform: capitalize;
   position: absolute;
   bottom:10px;
   left:10px;
-  font-size:80px;
+  font-size:50px;
   /* font-family: 'Space Mono'; */
 }
 .line4{
+  font-weight: 900;
   color: #FF40FF;
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: color-dodge; */
   text-transform: capitalize;
   line-height: .8;
   position: absolute;
-  font-size:80px;
+  font-size:50px;
   bottom:10px;
   left:10px;
     /* font-family: 'VT323'; */
@@ -570,7 +630,7 @@ background-size: cover;
 }
 .line5{
   color: #FF40FF;
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: color-dodge; */
   font-size:100px;
   text-transform: capitalize;
   position: absolute;
@@ -759,9 +819,7 @@ font-size:60px;
 
   .mumbai,
   .dates{
-
     padding-top:10px;
-
     font-size:21px;
   }
   .bar{
@@ -772,19 +830,28 @@ font-size:60px;
     height:70px;
   }
 .main_artwork{
-
   padding:20px;
   font-weight: 300;
     font-size: 24px;
 line-height: 1.6;
   /* height:60vh; */
 }
-.green{
-    /* padding-top:80px; */
+.intro_line1,
+.intro_line2,
+.intro_line3,
+.intro_line4{
+  font-size:27px;
 }
-
+.green{
+  font-size: 36px !important;
+}
 .yellowfont{
-  font-size: 100px;
+  height:120px;
+  font-size: 30px !important;
+}
+.jello{
+  height:60px;
+  font-size: 30px ;
 }
   .intro{
     background-color: #FF40FF;
@@ -818,8 +885,17 @@ background-color: black;
   /* height:150px; */
   /* background-color: yellow; */
   }
+  .intropink,
+  .introyellow{
+    padding:10px;
+  }
+  .intro_img img{
+      mix-blend-mode: color-dodge;
+    width:100%;
+    height:500px;
+  }
   .intro_img:active{
-    height: 200px;
+    /* height: 200px; */
   }
   .line1,
   .line2,
@@ -851,6 +927,10 @@ background-color: black;
 }
 
 .tickets{
+  padding: 10px;
+  font-size: 27px;
+}
+.partner{
   font-size: 27px;
 }
 .mail{
