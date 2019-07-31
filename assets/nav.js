@@ -9,7 +9,7 @@ var windowWidth = $(window).width()
   var percentage = 100 * pixels / difference
 if(windowWidth>750){
   $('.bar').css('width', 40 + percentage )
-    if (pixels <= 216){
+    if (pixels <= 100){
        $('.eyemyth').css('font-size', 200 - pixels)
         $('.festival').css('font-size', 150 - pixels * 5)
 
