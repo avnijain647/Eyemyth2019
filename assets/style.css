@@ -70,11 +70,11 @@ transform: translateX(-50%);
   display: flex;
   flex-wrap: nowrap;
   /* background-color: grey; */
-  /* justify-content: center; */
+  justify-content:flex-start;
   align-items:flex-start;
 }
 .eyemyth{
-  /* display: inline-block; */
+  display: inline !important;
   /* max-width: 90vw; */
 /* background-color: grey; */
   line-height:.8;
@@ -94,7 +94,7 @@ transform: translateX(-50%);
 }
 .festival2{
   width: 800px;
-  background-color: red;
+  /* background-color: red; */
   font-weight: 900;
   line-height:.8;
   font-size: 150px;
@@ -108,7 +108,7 @@ transform: translateX(-50%);
   flex-wrap: wrap;
   /* flex-direction: column; */
   /* background-color: pink; */
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items:center;
 }
 .bar{
@@ -805,26 +805,37 @@ display: inline-block;
 }
 
 @media(max-width:750px) {
+  .lockup{
+    padding-top: 10px;
+  }
   .logolockup{
+    /* background-color: blue; */
 width: 95vw;
   padding-left: 0;
   }
   .eyemyth{
-    display: block;
-font-size:60px;
+font-size:100px;
+    /* display: block; */
+/*  */
   }
   .festival{
-    font-size:30px;
+    font-size:60px;
+    /* font-size:30px; */
+  }
+  .festivalflex{
+    /* background-color: red; */
   }
 
   .mumbai,
   .dates{
+
     padding-top:10px;
-    font-size:21px;
+    font-size:50px;
+    /* font-size:21px; */
   }
   .bar{
-  width:10px;
-    height:4px;
+  width:100px;
+    height:6px;
   }
   .lockupvoid{
     height:70px;

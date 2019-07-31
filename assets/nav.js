@@ -45,12 +45,18 @@ if(windowWidth>750){
   }
   if(windowWidth<750){
       $('.bar').css('width', 5 + percentage )
-      if (pixels <= 30){
-         $('.eyemyth').css('font-size', 60 - pixels)
-          $('.festival').css('font-size', 30 - pixels )
-            $('.mumbai').css('font-size', 21 - pixels )
-            $('.dates').css('font-size', 21 - pixels )
+      if (pixels <=14){
+         $('.eyemyth').css('font-size', 100 - pixels)
+          $('.festival').css('font-size', 60  + pixels)
+            $('.mumbai').css('font-size', 50 + pixels )
+            $('.dates').css('font-size', 50  + pixels)
       }
+      // if (pixels >= 20){
+      //    $('.eyemyth').css('font-size', 60 - pixels)
+      //     $('.festival').css('font-size', 30 + pixels )
+      //       $('.mumbai').css('font-size', 21 + pixels )
+      //       $('.dates').css('font-size', 21 + pixels )
+      // }
       else {
         $('.eyemyth').css('font-size', 36)
          $('.festival').css('font-size', 0 )
@@ -59,14 +65,40 @@ if(windowWidth>750){
       }
 
       if (pixels <= 10){
-         $('.lockup').css('padding-top', 210 - pixels)
+          $('.bar').css('width', 100)
+         // $('.lockup').css('padding-top', 210 - pixels)
 
       }
       else {
+
          $('.lockup').css('padding-top', 10)
 
       }
     }
+  // if(windowWidth<750){
+  //     $('.bar').css('width', 5 + percentage )
+  //     if (pixels <= 30){
+  //        $('.eyemyth').css('font-size', 80 - pixels)
+  //         $('.festival').css('font-size', 30 - pixels )
+  //           $('.mumbai').css('font-size', 21 - pixels )
+  //           $('.dates').css('font-size', 21 - pixels )
+  //     }
+  //     else {
+  //       $('.eyemyth').css('font-size', 36)
+  //        $('.festival').css('font-size', 0 )
+  //          $('.mumbai').css('font-size', 0 )
+  //          $('.dates').css('font-size', 21  )
+  //     }
+  //
+  //     if (pixels <= 10){
+  //        $('.lockup').css('padding-top', 210 - pixels)
+  //
+  //     }
+  //     else {
+  //        $('.lockup').css('padding-top', 10)
+  //
+  //     }
+  //   }
 
  })
 
