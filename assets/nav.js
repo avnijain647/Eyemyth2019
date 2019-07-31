@@ -128,11 +128,11 @@ if(windowWidth>750){
           i = 0;
         }
       }
-      setInterval(change, 2000);
+      setInterval(change, 1500);
 
     var speed = 50;
        var first = 0;
-       var pause = 2000;
+       var pause = 1500;
     function tick() {
         first = $('ul#ticker li:first').html();
         $('ul#ticker li:first').animate({

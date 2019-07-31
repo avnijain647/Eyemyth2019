@@ -278,27 +278,33 @@ font-family: 'Montserrat', sans-serif;
 
 }
 .intropink{
+  font-family: 'Ubuntu Mono';
+  font-weight: 700;
+  /* font-style: italic; */
   /* display: inline; */
   padding :50px;
+
 }
 .intropink a {
-  background-color: black;
-  color:#FF40FF;
+  /* background-color: black; */
+  color:black;
   display: inline;
-  font-family: 'Ubuntu Mono';
-  font-style: italic;
-  font-weight: 400;
+  /* font-family: 'Montserrat'; */
+  /* font-style: italic; */
+  /* font-weight: 300; */
 }
 .introyellow{
+  font-family: 'Ubuntu Mono';
+  font-weight: 700;
   padding :50px;
 }
 .introyellow a {
-  background-color: black;
-  color:#F8E71C;
+  /* background-color: black; */
+  color:black;
   display: inline;
-  font-family: 'Ubuntu Mono';
-  font-style: italic;
-  font-weight: 400;
+  /* font-family: 'Ubuntu Mono'; */
+  /* font-style: italic; */
+  /* font-weight: 400; */
 }
 .blockpink{
   /* display: flex;
@@ -430,22 +436,22 @@ a{
   color :grey;
 }
 .yellowfont{
-    /* font-family: 'Space Mono'; */
+/* padding:50px; */
   background-color:#000;
-  height:250px;
+  height:180px;
   font-size: 60px !important;
   line-height: 1 !important;
-/* width:100% !important; */
-  /* background-color:#F8E71C; */
+
   color: #F8E71C;
 }
 ul{
+margin:0;
+padding:50px;
   list-style-type: none;
-  /* background-color:blue; */
-  height: 200px;
 }
 li{
-height:250px;
+  max-width:100%;
+height:300px;
   line-height: 1.6 !important;
   /* background-color:green; */
 }
@@ -513,16 +519,16 @@ font-weight: 900;
 }
 .intro_line1{
   /* background-color: blue; */
-  /* animation: slide1 24s linear infinite; */
+  /* animation: slide1 10s linear infinite; */
 }
 .intro_line2{
-  /* animation: slide2 30s linear infinite; */
+  /* animation: slide2 8s linear infinite; */
 }
 .intro_line3{
-  /* animation: slide1 27s linear infinite; */
+  /* animation: slide1 12s linear infinite; */
 }
 .intro_line4{
-  /* animation: slide2 15s linear infinite; */
+  /* animation: slide2 08s linear infinite; */
 }
 .intro_block:nth-child(even){
   /* float:right; */
@@ -541,7 +547,7 @@ background-size: cover;
 }
 
 .intro_img img{
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: hue;
   width:100%;
   height:800px;
 }
@@ -589,8 +595,15 @@ left:-100%;
 }
 }
 .line1{
-    font-weight: 900;
-    font-size:50px;
+  font-weight: 900;
+color: #FF40FF;
+/* mix-blend-mode: color-dodge; */
+text-transform: capitalize;
+position: absolute;
+text-align: left;
+bottom:10px;
+left:10px;
+/* font-size:50px; */
 }
 .line2{
     font-weight: 900;
@@ -601,7 +614,7 @@ left:-100%;
   text-align: left;
   bottom:10px;
   left:10px;
-  font-size:50px;
+  /* font-size:50px; */
 /* text-align: right; */
 }
 .line3{
@@ -612,7 +625,7 @@ left:-100%;
   position: absolute;
   bottom:10px;
   left:10px;
-  font-size:50px;
+  /* font-size:50px; */
   /* font-family: 'Space Mono'; */
 }
 .line4{
@@ -622,7 +635,7 @@ left:-100%;
   text-transform: capitalize;
   line-height: .8;
   position: absolute;
-  font-size:50px;
+  /* font-size:50px; */
   bottom:10px;
   left:10px;
     /* font-family: 'VT323'; */
@@ -681,8 +694,8 @@ color: #333;
   font-family: 'Montserrat', sans-serif;
   /* font-size: 0px; */
   font-weight: 300;
-  line-height: 1.2;
-  color:#333;
+  line-height: 1.6;
+  color:black;
   /* margin-top: 40px; */
   /* margin-bottom: 10px; */
 }
@@ -691,7 +704,10 @@ color: #333;
   font-weight:900;
 }
 .archiveintro{
+  font-family: 'Ubuntu Mono';
+  font-weight: 700;
   font-size: 32px;
+  line-height: 2;
 }
 .partner2{
 padding:20px;
@@ -959,6 +975,7 @@ color:#333;
   height:24px;
 }
 .credit{
+  line-height: 2;
   text-align: center;
   font-family: 'Montserrat';
   font-size:18px;
@@ -1022,28 +1039,44 @@ font-size:100px;
   .lockupvoid{
     height:70px;
   }
-.main_artwork{
-  padding:20px;
-  font-weight: 300;
-    font-size: 24px;
+
+.intropink,
+.introyellow{
+  font-size: 21px;
 line-height: 1.6;
-  /* height:60vh; */
 }
+
 .intro_line1,
 .intro_line2,
 .intro_line3,
 .intro_line4{
-  font-size:27px;
+padding:0;
+  font-size:36px;
 }
 .green{
-  font-size: 36px !important;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 50px !important;
 }
 .yellowfont{
-  height:120px;
-  font-size: 30px !important;
+height:90px;
+  font-size: 24px !important;
+}
+ul{
+margin:0;
+padding:10px;
+  list-style-type: none;
+}
+li{
+  max-width:90%;
+height:200px;
+  line-height: 1.6 !important;
+  /* background-color:green; */
 }
 .jello{
-  height:60px;
+  width:100%;
+  padding:10px;
+  height:50px;
   font-size: 30px ;
 }
   .intro{
@@ -1052,31 +1085,20 @@ line-height: 1.6;
     font-size: 24px;
     line-height: .8;
 background-color: black;
-/* max-width:300px; */
+
   }
 
-  /* .trans{
-    padding-left: 0px;
-  } */
 
   .intro_block{
   padding-bottom: 0px;
-    display:block;
-    /* flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items:  center; */
-    /* background-color: #333; */
+    height:70px;
+
   }
 
   .intro_img{
     width:100%;
-    height: 65px;
-  /* background: url(immersive.gif); */
-  background-repeat: no-repeat;
-  background-image: url(immersive.gif);
+    height: 70px;
   background-size: cover;
-  /* height:150px; */
-  /* background-color: yellow; */
   }
   .intropink,
   .introyellow{
@@ -1085,7 +1107,7 @@ background-color: black;
   .intro_img img{
       mix-blend-mode: color-dodge;
     width:100%;
-    height:500px;
+    height:300px;
   }
   .intro_img:active{
     /* height: 200px; */
@@ -1118,24 +1140,49 @@ background-color: black;
   #mc-embedded-subscribe{
   width:100px!important;
 }
-
+.archive{
+  padding:10px;
+}
+.archiveheader{
+font-size: 40px;
+  line-height: 1;
+}
+.archiveintro{
+  /* font-weight: 400; */
+  line-height: 1.6;
+  font-size: 21px;
+}
+.archive1{
+  padding-bottom:25px;
+}
 .tickets{
   padding: 10px;
-  font-size: 27px;
+  font-size: 24px;
+  line-height: 1.6;
+}
+.partnerheader{
+
+  font-size: 40px;
 }
 .partner{
+  padding:10px;
   font-size: 27px;
+}
+.partnerlogos{
+
+  align-items: center;
+  justify-content: space-around;
 }
 .mail{
   font-weight: 900;
 display: block;
-  background-color: #fff;
+  /* background-color: #fff; */
   color:#333;
   text-align: center;
   max-width:900px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom:120px;
+  /* padding-bottom:120px; */
 }
 .mail a{
     font-weight: 500;
@@ -1151,8 +1198,8 @@ display: block;
     display: inline-block;
 }
 .credit img{
-  padding-right:0;
-  height:12px;
+  padding-right:5px;
+  height:15px;
 }
 .archive{
   font-size: 27px;
