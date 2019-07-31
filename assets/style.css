@@ -684,7 +684,7 @@ color: #333;
   line-height: 1.2;
   color:#333;
   /* margin-top: 40px; */
-  margin-bottom: 40px;
+  /* margin-bottom: 10px; */
 }
 .archiveheader{
   font-size: 60px;
@@ -701,18 +701,7 @@ padding:20px;
 
 }
 
-.archive1,
-.archive2{
-  text-decoration: none;
-  font-size: 27px;
-    font-weight: 200;
-  display: inline-block;
-  /* background-color: red; */
-  /* display: block; */
-  /* float: left; */
-  height: 100px;
-  width:200px;
-}
+
 
 .partner2 img{
   width:100px;
@@ -721,9 +710,66 @@ height:60px;
 
 .archive1 img,
 .archive2 img{
+  padding-right:20px;
+  float left;
   width:60px;
 height:30px;
 }
+.archives{
+  max-width:100%;
+  padding:50px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.archive1,
+.archive2{
+  width:500px;
+  /* text-align: right; */
+  font-family: 'Montserrat';
+  color:#333;
+  /* background-color: yellow; */
+  text-decoration: none;
+  font-size: 27px;
+    font-weight: 300;
+  display: inline-block;
+}
+
+.archivephotos{
+  position: relative;
+}
+.archivephoto1,
+.archivephoto1,
+.archivephoto2,
+.archivephoto3,
+.archivephoto4,
+.archivephoto5,
+.archivephoto6,
+.archivephoto7,
+.archivephoto8,
+.archivephoto9,
+.archivephoto10{
+    position: absolute;
+    top:0;
+  left:0;
+}
+.archivephoto1 img,
+.archivephoto2 img,
+.archivephoto3 img,
+.archivephoto4 img,
+.archivephoto5 img,
+.archivephoto6 img,
+.archivephoto7 img,
+.archivephoto8 img,
+.archivephoto9 img,
+.archivephoto10 img{
+  /* background-color: red; */
+  width:240px;
+  height:160px;
+}
+
 
 .slideshow{
 position: relative;
