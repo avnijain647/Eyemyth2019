@@ -145,7 +145,7 @@ width:80px;
   top:0;
   left:0;
   z-index: 1;
-  width:100%;
+  width:100vw;
   height:48px;
 }
 .void{
@@ -650,7 +650,7 @@ color: #333;
   z-index:20;
   max-width: 100%;
   padding:50px;
-
+/* margin-top:50px; */
   font-family: 'Montserrat', sans-serif;
   font-size: 56px;
   font-weight: 900;
@@ -720,13 +720,15 @@ height:30px;
   padding:50px;
   display: flex;
   flex-flow: wrap;
-  justify-content: flex-start;
+  /* background-color: red; */
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 50px; */
 }
 .archive1,
 .archive2{
-  width:500px;
+  width:200px;
+  height:200px;
   /* text-align: right; */
   font-family: 'Montserrat';
   color:#333;
@@ -738,7 +740,26 @@ height:30px;
 }
 
 .archivephotos{
-  position: relative;
+  height:160px;
+
+  /* background-color:red; */
+  overflow: hidden;
+  /* position: relative; */
+}
+.archiveanimate{
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+animation: move 10s steps(10)infinite;
+}
+@keyframes move {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-2500px);
+  }
 }
 .archivephoto1,
 .archivephoto1,
@@ -751,9 +772,87 @@ height:30px;
 .archivephoto8,
 .archivephoto9,
 .archivephoto10{
-    position: absolute;
+  width:250px;
+  height:160px;
+  /* background-color: blue; */
+    /* position: absolute;
     top:0;
-  left:0;
+  left:0; */
+}
+
+.archivephoto1{
+  /* animation-delay :11s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto2{
+  /* animation-delay :11s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto3{
+  /* animation-delay :11s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto4{
+  /* animation-delay :11s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto5{
+  /* animation-delay :11s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto6{
+  /* animation-delay :9s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto7{
+  /* animation-delay :7s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto8{
+  /* animation-delay :5s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto9{
+  /* animation-delay :3s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+.archivephoto10{
+  /* animation-delay :2s; */
+  animation: flip 2s infinite;
+  /* transform: rotate(20deg); */
+  transform-origin: center;
+}
+@keyframes flip2 {
+  0%{
+    opacity: 0;
+      transform: rotate(20deg);
+  }
+  50%{
+      opacity: 1;
+    /* transform: rotate(20deg); */
+  }
+  100%{
+      opacity: 0;
+    transform: rotate(0deg);
+  }
 }
 .archivephoto1 img,
 .archivephoto2 img,
@@ -766,7 +865,7 @@ height:30px;
 .archivephoto9 img,
 .archivephoto10 img{
   /* background-color: red; */
-  width:240px;
+  width:250px;
   height:160px;
 }
 
@@ -860,6 +959,7 @@ color:#333;
   height:24px;
 }
 .credit{
+  text-align: center;
   font-family: 'Montserrat';
   font-size:18px;
   margin-left: auto;
