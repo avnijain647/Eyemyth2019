@@ -3,22 +3,30 @@ $(document).on('scroll', function() {
   var pixels = $(document).scrollTop()
   var documentHeight = $(document).height()
   var windowHeight = $(window).height()
+  var windowWidth = $(window).width()
 var windowWidth = $(window).width()
-
+// var heightvoid = 100+'vh'
   var difference = documentHeight - windowHeight
   var percentage = 100 * pixels / difference
+  var bardiff =  windowWidth - 260
+var barpercentage = percentage * bardiff/100
+
+
+
 if(windowWidth>750){
-  $('.bar').css('width', 40 + percentage )
-    if (pixels <= 100){
-       $('.eyemyth').css('font-size', 200 - pixels)
-        $('.festival').css('font-size', 150 - pixels * 5)
+  $('.bar').css('width', barpercentage  )
+    if (pixels <= 200){
+       $('.eyemyth').css('font-size', 160 - pixels/10)
+        $('.festival').css('font-size', 80 - pixels * 5)
 
-        $('.dates').css('font-size', 50 - pixels)
+        $('.dates').css('font-size', 80 + pixels/3)
 
-        $('.mumbai').css('font-size', 50 - pixels * 2)
+        $('.mumbai').css('font-size', 80 - pixels * 2)
+      $('.voidposition').css('opacity', 1 - pixels/250  )
     }
     else {
-
+// $('.void').css('height', 0 )
+$('.voidposition').css('opacity', 0 )
        $('.eyemyth').css('font-size', 24 )
        $('.festival').css('font-size', 0)
 
@@ -26,6 +34,15 @@ if(windowWidth>750){
        $('.mumbai').css('font-size', 0)
 
     }
+    if (pixels >= 10){
+       // $('.eyemyth').css('font-size', 200 - pixels)
+        $('.festival').css('font-size', 0)
+
+        // $('.dates').css('font-size', 50 - pixels)
+
+        $('.mumbai').css('font-size', 0)
+    }
+
 
     if (pixels <= 90){
        $('.lockup').css('padding-top', 100 - pixels)
@@ -44,28 +61,32 @@ if(windowWidth>750){
     }
   }
   if(windowWidth<750){
-      $('.bar').css('width', 5 + percentage )
-      if (pixels <=14){
-         $('.eyemyth').css('font-size', 100 - pixels)
-          $('.festival').css('font-size', 60  + pixels)
-            $('.mumbai').css('font-size', 50 + pixels )
-            $('.dates').css('font-size', 50  + pixels)
+
+      console.log(barpercentage)
+
+      $('.bar').css('width', barpercentage )
+      if (pixels <=200){
+
+         $('.eyemyth').css('font-size', 70 - pixels/10)
+          $('.festival').css('font-size', 35  - pixels*20)
+            $('.mumbai').css('font-size', 35 - pixels*20 )
+            $('.dates').css('font-size', 35  - pixels/10)
+            $('.festival').css('opacity', 1 - pixels/50  )
+            $('.mumbai').css('opacity', 1 - pixels/50  )
+            $('.voidposition').css('opacity', 1 - pixels/400  )
       }
-      // if (pixels >= 20){
-      //    $('.eyemyth').css('font-size', 60 - pixels)
-      //     $('.festival').css('font-size', 30 + pixels )
-      //       $('.mumbai').css('font-size', 21 + pixels )
-      //       $('.dates').css('font-size', 21 + pixels )
-      // }
+
       else {
-        $('.eyemyth').css('font-size', 36)
+
+        $('.eyemyth').css('font-size', 35)
          $('.festival').css('font-size', 0 )
            $('.mumbai').css('font-size', 0 )
            $('.dates').css('font-size', 21  )
+           $('.voidposition').css('opacity', 0  )
       }
 
       if (pixels <= 10){
-          $('.bar').css('width', 100)
+          // $('.bar').css('width', 100)
          // $('.lockup').css('padding-top', 210 - pixels)
 
       }
@@ -75,30 +96,6 @@ if(windowWidth>750){
 
       }
     }
-  // if(windowWidth<750){
-  //     $('.bar').css('width', 5 + percentage )
-  //     if (pixels <= 30){
-  //        $('.eyemyth').css('font-size', 80 - pixels)
-  //         $('.festival').css('font-size', 30 - pixels )
-  //           $('.mumbai').css('font-size', 21 - pixels )
-  //           $('.dates').css('font-size', 21 - pixels )
-  //     }
-  //     else {
-  //       $('.eyemyth').css('font-size', 36)
-  //        $('.festival').css('font-size', 0 )
-  //          $('.mumbai').css('font-size', 0 )
-  //          $('.dates').css('font-size', 21  )
-  //     }
-  //
-  //     if (pixels <= 10){
-  //        $('.lockup').css('padding-top', 210 - pixels)
-  //
-  //     }
-  //     else {
-  //        $('.lockup').css('padding-top', 10)
-  //
-  //     }
-  //   }
 
  })
 
@@ -121,7 +118,7 @@ if(windowWidth>750){
       var i = 0;
       function change() {
         // doc.style.fontfamily = textArray[i];
-        $(".yellowfont").css("font-family", textArray[i]);
+        $(".greenblock").css("font-family", textArray[i]);
         i++;
 
         if(i > textArray.length - 1) {
