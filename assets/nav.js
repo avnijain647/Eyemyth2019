@@ -17,11 +17,11 @@ if(windowWidth>750){
   $('.bar').css('width', barpercentage  )
     if (pixels <= 200){
        $('.eyemyth').css('font-size', 160 - pixels/10)
-        $('.festival').css('font-size', 80 - pixels * 5)
+        $('.festival').css('font-size', 80 - pixels * 10)
 
         $('.dates').css('font-size', 80 + pixels/3)
 
-        $('.mumbai').css('font-size', 80 - pixels * 2)
+        $('.mumbai').css('font-size', 80 - pixels * 10)
       $('.voidposition').css('opacity', 1 - pixels/250  )
     }
     else {
@@ -45,20 +45,15 @@ $('.voidposition').css('opacity', 0 )
 
 
     if (pixels <= 90){
-       $('.lockup').css('padding-top', 100 - pixels)
-
-    }
-    else {
-       $('.lockup').css('padding-top', 10)
-
-    }
-    if (pixels >= 500){
-       // $('.jello').addClass('.jelloanimate')
+         $('.lockup').css('padding-top', 10)
+       // $('.lockup').css('padding-top', 100 - pixels)
 
     }
     else {
 
+
     }
+
   }
   if(windowWidth<750){
 
@@ -109,11 +104,12 @@ $('.eyemyth').css('display', 'block')
       var doc = document.getElementById("#ticker");
       // var color = ["black", "blue", "brown", "green"];
       var textArray = [
-          'Space Mono',
-          'B612',
-          'Nova Mono',
-          'Ubuntu Mono',
-          'VT323'
+          'VT323',
+          // 'Space Mono',
+          // 'B612',
+          // 'Nova Mono',
+          // 'Ubuntu Mono'
+
       ];
       var i = 0;
       function change() {
