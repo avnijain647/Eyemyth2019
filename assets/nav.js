@@ -66,7 +66,7 @@ $('.voidposition').css('opacity', 0 )
 
       $('.bar').css('width', barpercentage )
       if (pixels <=200){
-
+$('.eyemyth').css('display', 'block')
          $('.eyemyth').css('font-size', 70 - pixels/10)
           $('.festival').css('font-size', 35  - pixels*20)
             $('.mumbai').css('font-size', 35 - pixels*20 )
@@ -77,7 +77,7 @@ $('.voidposition').css('opacity', 0 )
       }
 
       else {
-
+  $('.eyemyth').css('display', 'inline')
         $('.eyemyth').css('font-size', 35)
          $('.festival').css('font-size', 0 )
            $('.mumbai').css('font-size', 0 )

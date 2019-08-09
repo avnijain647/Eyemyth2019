@@ -64,7 +64,7 @@ transform: translateX(-50%);
 
 .eyemyth{
   z-index: 11;
-  display: inline !important;
+  display: inline;
   font-size: 160px;
   color: #fff;
 }
@@ -207,7 +207,7 @@ mix-blend-mode: difference;
 
 
 #mc_embed_signup{
-
+background-color:#DD3928;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
@@ -218,19 +218,11 @@ mix-blend-mode: difference;
 }
 
 .newsletter_intro{
-background-color:#DD3928;
+
     font-size:21px;
     color: #000;
 }
 
-.green{
-
-  background-color: #8AFE4F;
-  color:black;
-z-index:0;
-  width:100vw;
-
-}
 .programmes{
   /* mix-blend-mode: color-burn; */
   background-color:#000;
@@ -261,21 +253,22 @@ width:82vw;
     padding-bottom :50px;
 }
 .artistname{
-  border-top:2px solid red;
+  border-top:2px solid #FF40FF;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
+  font-size: 35px;
+  color:#fff;
+  font-family: 'Bungee', cursive;
+  background-color: #000;
 }
 
-.jello {
-  /* float: left; */
-  font-size: 40px;
+.jello{
+  /* background-color: red; */
+  font-size: 35px;
 width:45%;
-height:100px;
-  padding: 30px;
-
-margin-top: 20px;
-margin-bottom: 20px;
+font-family: 'Bungee', cursive;
+/* mix-blend-mode: hue; */
 }
 .jello1:hover{
 
@@ -385,13 +378,10 @@ a{
 }
 
 .typeform-share .button{
-  display:inline-block;
   text-decoration:none;
   background-color:#F3595C;
   color:white;
   cursor:pointer;
-  font-family:Helvetica,Arial,sans-serif;
-  font-size:20px;
   line-height:50px;
   text-align:center;margin:0;
   height:50px;
@@ -405,36 +395,37 @@ a{
   -webkit-font-smoothing:antialiased;
   -moz-osx-fontsmoothing:grayscale;
 }
+.button{
+  position: absolute !important;
+  top:50% !important;
+  left:50% !important;
+  transform:translate(-50%, -50%);
+  font-family:'Bungee', cursive !important;
+  font-size:21px !important;
+}
 .greenblock{
-  /* mix-blend-mode: multiply; */
-  /* background-color: white; */
+  mix-blend-mode: difference;
   position: relative;
   z-index: 0;
   overflow: hidden;
   color:#000 !important;
   background-color:#8AFE4F;
-  height:180px;
-  width:100%;
+  height:75vw;
+  width:100vw;
   font-size: 60px !important;
   line-height: 1.4 !important;
-  /* color: #F8E71C; */
 }
+
 ul{
-    /* background-color: white; */
   position: absolute;
-  /* top:50%; */
-/* transform: translateY(-50%); */
 margin:0;
-padding:50px;
   list-style-type: none;
 }
 li{
-    /* background-color: white; */
   text-align: center;
-  max-width:100%;
-height:300px;
+width:100vw;
+height:75vw;
   line-height: 1 !important;
-  /* background-color:green; */
 }
 .bluefont{
   width: 100%;
@@ -462,9 +453,21 @@ font-weight: 900;
   line-height: 1.4;
 }
 .weekend{
+  color:#000;
+  font-size:42px;
+  height:75vw;
+  width:100vw;
+  background-color: #8AFE4F;
+  font-family: 'Bungee Outline', cursive;
   position: sticky;
   position: -webkit-sticky;
   top:0;
+}
+.weekendmiddle{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 .relative{
   /* position:relative; */
@@ -495,7 +498,11 @@ font-weight: 900;
 .intro_block:nth-child(even){
   /* float:right; */
 }
-
+.introconferences{
+  font-family: 'fira Sans';
+  line-height: 1.4;
+  font-weight: 200;
+}
 .intro_block{
   width:100%;
   height:250px;
@@ -621,27 +628,25 @@ background-color: #fff;
 color: #333;
 }
 .partner{
-  text-align: left;
+  text-align: center;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
   z-index:0;
-  max-width: 100%;
+width: 100vw;
+height:75vw;
   padding:50px;
 background-color: white;
   font-family: 'Bungee', cursive;
   font-size: 56px;
   /* font-weight: 900; */
-  color:#333;
+  color:#000;
 
 }
 .partnerlogos{
-  position: sticky;
-  position: -webkit-sticky;
-  top:0;
-  /* height:100vh; */
-  width:100vw;
-  /* z-index:20; */
+  height:100vh;
+  max-width:100vw;
+  z-index:3;
   background-color: white;
   display:flex;
   flex-wrap: wrap;
@@ -650,8 +655,12 @@ background-color: white;
 }
 
 .partnerheader{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
   font-size: 60px;
-  font-weight:900;
+
 }
 
 .archive{
@@ -678,10 +687,11 @@ background-color: white;
 }
 .partner2{
 padding:20px;
-/* background-color: blue; */
+background-color:white;
   text-decoration: none;
-  /* display: inline-block; */
-
+  position: sticky;
+  position: -webkit-sticky;
+  top:80px;
 }
 
 
@@ -893,17 +903,44 @@ transform: translateX(0);
   position: sticky;
   position: -webkit-sticky;
   top:80px;
-  width: 100%;
+  width: 100vw;
   margin-left:auto;
   margin-right: auto;
   font-size: 60px;
   font-family: 'Bungee', cursive;
   padding:50px;
-
   text-align: left;
-
-font-weight: 900;
   color:#000;
+
+}
+.merchposition{
+  display: flex;
+  flex-wrap: wrap;
+  line-height:60px;
+width:90%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.merch{
+    display: inline;
+}
+.shop{
+  display: inline;
+  position: relative;
+  width:80px;
+  height:50px;
+  /* border:1px solid white; */
+  border-radius: 50px;
+  /* padding:5px; */
+}
+.shopword{
+position: absolute;
+top: 50%;
+left:50%;
+transform:translate(-50%, -50%);
+
 }
 .actions{
 /* overflow:hidden; */
@@ -916,22 +953,23 @@ padding-right:50px;
 padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F2D522;
+  background-color: #000;
 font-size:18px;
 font-family: 'Montserrat', sans-serif;
 
 }
 
 .mail {
+  background-color: grey;
+  font-family: 'Bungee', cursive;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
-font-weight: 900;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
-color:#333;
+color:#000;
 width:100vw;
 height:75vw;
 }
@@ -961,10 +999,7 @@ height:75vw;
   height:24px;
 }
 .credit{
-  /* position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);   */
+    color:#fff;
   font-weight: 300;
   line-height: 1.4;
   text-align: center;
@@ -986,7 +1021,7 @@ display: inline-block;
   font-size:18px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
-  color:#333;
+  color:#fff;
 }
 .unbox{
   line-height: 1;
@@ -1006,7 +1041,7 @@ display: inline-block;
     display: block;
   }
   .eyemyth{
-    display: block;
+    display: block ;
     z-index:10;
 font-size:70px;
 
@@ -1033,6 +1068,7 @@ font-size:70px;
   }
   .weekend{
     top:80px;
+    font-size: 49px;
   }
 .intropink,
 .introyellow{
@@ -1047,13 +1083,10 @@ line-height: 1.4;
 padding:0;
   font-size:36px;
 }
-.green{
-  /* padding:5px; */
-  font-size: 30px !important;
-}
-.greenblock{
 
-height:80vw;
+.greenblock{
+width:100vw;
+height:75vw;
   font-size: 40px !important;
 }
 ul{
@@ -1068,19 +1101,16 @@ height:80vw;
   /* background-color:green; */
 }
 .jello{
-  /* background-color:red; */
   width:100%;
-  padding:10px;
-  height:50px;
-  font-size: 21px ;
-
+  font-size: 35px;
 }
 .programme1,
 .programme2,
 .programme3{
   /* float:left; */
   width:100%;
-  /* height:100vh; */
+  mix-blend-mode: saturation;
+  background-color: black;
   position: sticky;
   top:80px;
   position:-webkit-sticky;
@@ -1099,9 +1129,9 @@ height:80vw;
   background-color:pink;
 }
 .introconferences{
-  font-size: 16px;
+  font-size: 17.5px;
   width:100%;
-  height:100px;
+  /* height:100px; */
   /* background-color: red; */
 }
   .intro{
@@ -1182,7 +1212,7 @@ font-size: 40px;
 .tickets{
   background-color: #37A7FF;
   padding: 0px;
-  font-size: 21px;
+  font-size: 35px;
   line-height: 1.4;
 }
 .partnerheader{
@@ -1194,24 +1224,23 @@ font-size: 40px;
   font-size: 27px;
 }
 .partnerlogos{
+  background-color: white;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.partner2{
+padding:10px;
+background-color:white;
+  text-decoration: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top:80px;
 }
 .actions{
   top:80px;
   height:100vh;
 }
-.mail{
-  font-weight: 900;
-display: block;
-  /* background-color: #fff; */
-  color:#333;
-  text-align: center;
-  max-width:900px;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-bottom:120px; */
-}
+
 .mail a{
     font-weight: 500;
   color:#333;
