@@ -149,8 +149,8 @@ font-family: "Fira Sans";
 position: fixed;
 right:0;
 bottom:0;
-width:100px;
-height:75px;
+width:200px;
+height:50px;
 
 
 /* background-color: #333; */
@@ -163,7 +163,7 @@ height:75px;
   font-family: "Fira Sans";
     z-index:10;
   width:200px;
-  height:75px;
+  height:50px;
   position: fixed;
   left:0;
   bottom:0;
@@ -717,7 +717,7 @@ color: #333;
   top:80px;
   z-index:0;
 width: 100vw;
-height:75vw;
+height:50vw;
   /* padding:50px; */
 background-color: white;
   font-family: 'Bungee', cursive;
@@ -763,6 +763,7 @@ background-color: white;
   color:black;
 }
 .archive a{
+  color:#000;
   font-family: 'Bungee', cursive;
 }
 .partner2{
@@ -993,6 +994,7 @@ transform: translateX(0);
 }
 
 .merchposition{
+  line-height: 1.4;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1004,33 +1006,51 @@ transform: translateX(0);
   transform: translate(-50%, -50%);
 }
 .merch{
-  color:#fff;
+  color:#000;
   font-size: 60px;
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee', cursive;
     display: inline;
 }
 .shopposition{
   position: absolute;
-  bottom:0;
-  right:0;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  /* bottom:0;
+  right:0; */
   display: flex;
   flex: nowrap;
 }
 .shop{
+  /* color:#4A4A4A !important; */
   text-decoration: none;
   font-family:'Bungee', cursive !important;
   font-size:21px !important;
   position: relative;
   width:100px;
   height:50px;
-  border:1px solid white;
+    background-color: #FF40FF;
+  /* border:1px solid #333; */
   border-radius: 50px;
 }
 .shopmail{
+  font-size:21px !important;
+  font-family:'Bungee', cursive !important;
   position: relative;
   width:240px;
   height:50px;
-  border:1px solid white;
+  background-color: #FF40FF;
+  /* border:1px solid black; */
+  border-radius: 50px;
+}
+.shopmail2{
+    background-color: #FF40FF;
+  font-size:21px !important;
+  font-family:'Bungee', cursive !important;
+  position: relative;
+  width:350px;
+  height:50px;
+  /* border:1px solid black; */
   border-radius: 50px;
 }
 .shopword{
@@ -1056,8 +1076,8 @@ font-size:21px;
 font-family: 'Bungee', cursive;
 }
 
-.mail {
-  background-color: grey;
+.mail{
+  background-color:#37A7FF;
   font-family: 'Bungee Hairline', cursive;
   position: sticky;
   position: -webkit-sticky;
@@ -1066,7 +1086,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
-color:#000;
+color:#D8D8D8;
 width:100vw;
 height:50vw;
 }
@@ -1090,11 +1110,16 @@ background-color: #D8D8D8;
 }
 .social1{
     margin:0;
-    padding:0;
+    padding-left:25px;
+padding-right:25px;
+    /* height:50px; */
 }
 .social1 img{
-  padding-left:10px;
-  padding-right:10px;
+      background-color: #FF40FF;
+  border-radius: 50px;
+  /* border:1px solid black; */
+  padding-left:15px;
+  padding-right:15px;
   height:35px;
 }
 .credit{
@@ -1300,7 +1325,7 @@ height:100vh;
   padding:10px;
 }
 .archiveheader{
-font-size: 40px;
+font-size: 35px;
   line-height: 1.4;
 }
 .archives{
