@@ -155,7 +155,7 @@ video{
 }
 .voidposition{
 width:90vw;
-/* height:70vw; */
+
 font-size: 21px;
 line-height: 1.4;
   color: #8AFE4F;
@@ -163,11 +163,12 @@ line-height: 1.4;
 font-family: "Bungee";
 }
 .voidposition2{
+  background-color: black;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-width:90vw;
+width:100vw;
 position: sticky;
 position: -webkit-sticky;
 top:40px;
