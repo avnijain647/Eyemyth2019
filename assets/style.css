@@ -1340,7 +1340,9 @@ font-size:63px;
 /* .mumbai{
   margin-bottom:10px;
 } */
-
+.dates{
+  font-size: 21px;
+}
   .mumbai,
   .dates{
     /* padding-top:10px; */
