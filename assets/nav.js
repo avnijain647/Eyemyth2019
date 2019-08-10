@@ -62,7 +62,7 @@ $('.voidposition').css('opacity', 0 )
       $('.bar').css('width', barpercentage )
       if (pixels <=200){
           $('.bar').css('width', 100 )
-$('.eyemyth').css('display', 'block')
+// $('.eyemyth').css('display', 'block')
 
          $('.eyemyth').css('font-size', 70 - pixels/50)
           $('.festival').css('font-size', 35  - pixels*20)
