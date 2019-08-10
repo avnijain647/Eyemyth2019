@@ -61,11 +61,13 @@ $('.voidposition').css('opacity', 0 )
 
       $('.bar').css('width', barpercentage )
       if (pixels <=200){
+          $('.bar').css('width', 100 )
 $('.eyemyth').css('display', 'block')
-         $('.eyemyth').css('font-size', 70 - pixels/10)
+
+         $('.eyemyth').css('font-size', 70 - pixels/50)
           $('.festival').css('font-size', 35  - pixels*20)
             $('.mumbai').css('font-size', 35 - pixels*20 )
-            $('.dates').css('font-size', 35  - pixels/10)
+            $('.dates').css('font-size', 35  - pixels/100)
             $('.festival').css('opacity', 1 - pixels/50  )
             $('.mumbai').css('opacity', 1 - pixels/50  )
             $('.voidposition').css('opacity', 1 - pixels/400  )
@@ -101,27 +103,27 @@ $('.eyemyth').css('display', 'block')
 
 
 
-      var doc = document.getElementById("#ticker");
-      // var color = ["black", "blue", "brown", "green"];
-      var textArray = [
-          'VT323',
-          // 'Space Mono',
-          // 'B612',
-          // 'Nova Mono',
-          // 'Ubuntu Mono'
-
-      ];
-      var i = 0;
-      function change() {
-        // doc.style.fontfamily = textArray[i];
-        $(".greenblock").css("font-family", textArray[i]);
-        i++;
-
-        if(i > textArray.length - 1) {
-          i = 0;
-        }
-      }
-      setInterval(change, 1500);
+      // var doc = document.getElementById("#ticker");
+      // // var color = ["black", "blue", "brown", "green"];
+      // var textArray = [
+      //     'Bungee Hairline',
+      //     // 'Space Mono',
+      //     // 'B612',
+      //     // 'Nova Mono',
+      //     // 'Ubuntu Mono'
+      //
+      // ];
+      // var i = 0;
+      // function change() {
+      //   // doc.style.fontfamily = textArray[i];
+      //   $(".greenblock").css("font-family", textArray[i]);
+      //   i++;
+      //
+      //   if(i > textArray.length - 1) {
+      //     i = 0;
+      //   }
+      // }
+      // setInterval(change, 1500);
 
     var speed = 50;
        var first = 0;
