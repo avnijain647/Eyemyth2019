@@ -15,7 +15,7 @@ var barpercentage = percentage * bardiff/100
 
 if(windowWidth>750){
   $('.bar').css('width', barpercentage  )
-    if (pixels <= 200){
+    if (pixels <= 20){
        $('.eyemyth').css('font-size', 160 - pixels/10)
         $('.festival').css('font-size', 80 - pixels * 10)
 

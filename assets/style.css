@@ -48,6 +48,7 @@ left:0;
   z-index:10;
   padding-top:50px;
   font-family: 'Bungee', cursive;
+  background-color: black;
 }
 .logolockup{
 line-height: 1;
@@ -115,6 +116,7 @@ video{
   /* position: sticky; */
   /* position: -webkit-sticky; */
   top:0;
+  left:0;
     background-color: black;
     /* opacity: .5; */
     width:100vw;
@@ -143,17 +145,18 @@ font-family: "Fira Sans";
 .voidintro{
   position:absolute;
   width:100vw;
+  /* height:100vh; */
   bottom:10px;
-  left:50%;
-  transform: translateX(-50%);
+  right:0;
+  /* transform: translateX(-150%); */
   font-family: "Fira Sans";
   font-size: 21px;
   color: #8AFE4F;
     font-weight: 100;
 }
 .voidintro img{
-  width:100vw;
-  height:70vw;
+  width:80vw;
+  height:60vw;
 }
 
 
@@ -289,6 +292,7 @@ width:82vw;
   font-size: 35px;
   padding-top:15px;
   padding-left:15px;
+    padding-bottom:15px;
   color:#fff;
   /* color:#D8D8D8; */
     font-size: 35px;
@@ -296,12 +300,13 @@ width:82vw;
   background-color: #000;
 
 }
+
 .programme1,
 .programme2,
 .programme3{
   color: #FF40FF;
   width:100%;
-  mix-blend-mode: saturation;
+  /* mix-blend-mode: saturation; */
   background-color: #000;
   position: sticky;
   top:80px;
@@ -334,7 +339,7 @@ overflow: auto;
 .introconferences{
   font-size: 17.5px;
   padding-left: 15px;
-  /* height:100px; */
+  padding-bottom: 10px;
   /* background-color: red; */
 }
 
@@ -495,12 +500,13 @@ a{
   position: sticky;
   position:-webkit-sticky;
   top:80px;
-  height:75vw;
+  height:50vh;
   width:100vw;
   background-color:#FF40FF;
 }
 .greenblock{
-  /* mix-blend-mode: hard-light; */
+  width:100vw;
+  height:50vh;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -524,9 +530,9 @@ height:300vw;
 ul{
 /* padding:5px; */
   position: absolute;
-  top:60%;
+  top:50%;
   left:50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 margin:0;
 /* max-width:90vw; */
 
@@ -564,20 +570,21 @@ font-weight: 900;
   font-size: 50px;
   line-height: 1.4;
 }
+
 .weekend{
   color:#000;
-  font-size:42px;
-  height:75vw;
+  font-size:70px;
+  height:50vh;
   width:100vw;
   background-color: #8AFE4F;
   font-family: 'Bungee Shade', cursive;
   position: sticky;
   position: -webkit-sticky;
-  top:0;
+  top:80px;
 }
 .weekendmiddle{
   text-align: center;
-  height:75vw;
+  height:50vh;
   width:90vw;
   display: flex;
   flex-wrap: wrap;
@@ -1029,21 +1036,35 @@ transform: translateX(0);
 }
 
 .merchposition{
+    height: 50vw;
   line-height: 1.4;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  width:90%;
+  width:90vw;
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
 }
 .merchpositiondelicious{
-
+  font-family: 'Bungee Shade';
+  height: 50vw;
+line-height: 1.4;
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+width:90vw;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
 }
 .merch{
+    height: 50vw;
+  position: relative;
   width:100vw;
   color:#000;
   font-size: 60px;
@@ -1051,6 +1072,14 @@ transform: translateX(0);
     display: inline;
 }
 .merchall{
+  height: 50vw;
+    position: absolute;
+    top:0;
+    left:0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   width:400vw;
 }
 .shopposition{
@@ -1081,7 +1110,7 @@ transform: translateX(0);
   font-size:21px !important;
   font-family:'Bungee', cursive !important;
   position: relative;
-  width:240px;
+  width:350px;
   height:50px;
   background-color: #FF40FF;
 
@@ -1123,16 +1152,17 @@ font-family: 'Bungee', cursive;
 
 .mail{
   background-color:#37A7FF;
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee', cursive;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
   overflow: auto;
+  font-size:35px;
 /* display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-between; */
-color:#D8D8D8;
+color:#000;
 width:100vw;
 height:50vw;
 }
@@ -1204,7 +1234,10 @@ display: inline-block;
   transform:translateX(-50%);
 }
 @media(max-width:750px) {
-
+  .voidintro img{
+    width:100vw;
+    height:75vw;
+  }
   .lockup{
     padding-top: 10px;
   }
@@ -1243,9 +1276,25 @@ font-size:70px;
     height:80px;
   }
   .weekend{
+    height:75vw;
+    width:100vw;
     top:80px;
-    font-size: 49px;
+    font-size: 42px;
   }
+  .weekendmiddle{
+    text-align: center;
+    height:75vw;
+    width:90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
 .intropink,
 .introyellow{
   font-size: 21px;
@@ -1259,7 +1308,12 @@ line-height: 1.4;
 padding:0;
   font-size:36px;
 }
+.flashingwords{
 
+  height:75vw;
+  width:100vw;
+
+}
 .greenblock{
 width:100vw;
 height:75vw;
@@ -1280,13 +1334,13 @@ height:80vw;
   padding-bottom:5px;
   font-size: 35px;
 }
+
 .programme1,
 .programme2,
 .programme3{
 
   width:100%;
-  mix-blend-mode: saturation;
-  /* background-color:; */
+
   position: sticky;
   top:80px;
   position:-webkit-sticky;
@@ -1405,12 +1459,10 @@ font-size: 35px;
   font-size: 18px;
 }
 .archiveyear{
+  font-size: 35px;
   font-family: 'Bungee' cursive;
-  color:#fff;
+  color:#FF40FF;
   z-index:1;
-  position: absolute;
-  right:0;
-  bottom:0;
 }
 .archivephotos{
   height:64vw;
@@ -1463,7 +1515,7 @@ animation: move2 10s steps(10)infinite;
 .merch{
   /* color:#000; */
 
-  font-size:35px;
+  font-size:30px;
 }
 .partnerheader{
 width:95vw;
@@ -1479,7 +1531,7 @@ width:95vw;
   justify-content: space-around;
 }
 .partner2{
-padding:10px;
+padding:20px;
 background-color:white;
   text-decoration: none;
   position: sticky;
