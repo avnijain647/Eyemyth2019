@@ -8,7 +8,7 @@ var windowWidth = $(window).width()
 // var heightvoid = 100+'vh'
   var difference = documentHeight - windowHeight
   var percentage = 100 * pixels / difference
-  var bardiff =  windowWidth - 260
+  var bardiff =  windowWidth - 200
 var barpercentage = percentage * bardiff/100
 
 
@@ -61,25 +61,32 @@ $('.voidposition').css('opacity', 0 )
 
       $('.bar').css('width', barpercentage )
       if (pixels <=200){
-          $('.bar').css('width', 100 )
+          $('.bar').css('width', 0 )
 // $('.eyemyth').css('display', 'block')
 
-         $('.eyemyth').css('font-size', 70 - pixels/50)
-          $('.festival').css('font-size', 35  - pixels*20)
-            $('.mumbai').css('font-size', 35 - pixels*20 )
-            $('.dates').css('font-size', 35  - pixels/100)
-            $('.festival').css('opacity', 1 - pixels/50  )
-            $('.mumbai').css('opacity', 1 - pixels/50  )
-            $('.voidposition').css('opacity', 1 - pixels/400  )
+         // $('.eyemyth').css('font-size', 63 - pixels/50)
+          // $('.festival').css('font-size', 35  - pixels*20)
+            // $('.mumbai').css('font-size', 35 - pixels*20 )
+            // $('.dates').css('font-size', 21  - pixels/1000)
+            // $('.festival').css('opacity', 1 - pixels/50  )
+            // $('.mumbai').css('opacity', 1 - pixels/50  )
+            // $('.voidposition').css('opacity', 1 - pixels/400  )
+            $('.eyemyth').css('font-size', 63 - pixels/20 )
+             $('.festival').css('font-size', 35  )
+               $('.mumbai').css('font-size', 35)
+               $('.dates').css('font-size', 21  )
+               $('.festival').css('opacity', 1   )
+               $('.mumbai').css('opacity', 1 )
+               $('.voidposition').css('opacity', 1   )
       }
 
       else {
-  $('.eyemyth').css('display', 'inline')
+  // $('.eyemyth').css('display', 'inline')
         $('.eyemyth').css('font-size', 35)
-         $('.festival').css('font-size', 0 )
-           $('.mumbai').css('font-size', 0 )
+         // $('.festival').css('font-size', 0 )
+           // $('.mumbai').css('font-size', 0 )
            $('.dates').css('font-size', 21  )
-           $('.voidposition').css('opacity', 0  )
+           // $('.voidposition').css('opacity', 0  )
       }
 
       if (pixels <= 10){
@@ -103,31 +110,33 @@ $('.voidposition').css('opacity', 0 )
 
 
 
-      // var doc = document.getElementById("#ticker");
-      // // var color = ["black", "blue", "brown", "green"];
-      // var textArray = [
-      //     'Bungee Hairline',
-      //     // 'Space Mono',
-      //     // 'B612',
-      //     // 'Nova Mono',
-      //     // 'Ubuntu Mono'
-      //
-      // ];
-      // var i = 0;
-      // function change() {
-      //   // doc.style.fontfamily = textArray[i];
-      //   $(".greenblock").css("font-family", textArray[i]);
-      //   i++;
-      //
-      //   if(i > textArray.length - 1) {
-      //     i = 0;
-      //   }
-      // }
-      // setInterval(change, 1500);
+      var doc = document.getElementById("#ticker");
+      var color = ["#8AFE4F", "#FF40FF", "#F4E243", "#37A7FF", "#CA83F6", "#F5A623"];
+      var textArray = [
+          'Bungee',
+          'VT323',
+          'Space Mono',
+          'B612',
+          'Nova Mono',
+          'Ubuntu Mono'
+
+      ];
+      var i = 0;
+      function change() {
+        // doc.style.fontfamily = textArray[i];
+        $(".greenblock").css("font-family", textArray[i]);
+        i++;
+        $(".greenblock").css("color", color[i]);
+        i++;
+        if(i > textArray.length - 1) {
+          i = 0;
+        }
+      }
+      setInterval(change, 150);
 
     var speed = 50;
        var first = 0;
-       var pause = 1500;
+       var pause = 900;
     function tick() {
         first = $('ul#ticker li:first').html();
         $('ul#ticker li:first').animate({
