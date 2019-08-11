@@ -40,17 +40,13 @@ color:#fff;
 }
 
 .lockup{
-width: 100vw;
+/* width: 100vw;
 position: relative;
-/* text-align: center; */
-/* position: sticky;
-  position:-webkit-sticky;
-top:0;
-left:0; */
+
   z-index:19;
   padding-top:50px;
   font-family: 'Bungee', cursive;
-  background-color: black;
+  background-color: black; */
 }
 .logolockup{
 line-height: 1;
@@ -379,7 +375,7 @@ align-items:  flex-start;
   height:270vh;
 width: 120vh;
   background-color:#D8D8D8;
-  animation: move3 9s steps(3)infinite;
+  /* animation: move3 9s steps(3)infinite; */
   transform: rotate(0);
 /* animation: slideshow2 24s linear infinite; */
   display:flex;
@@ -570,6 +566,7 @@ a{
   -moz-osx-fontsmoothing:grayscale;
 }
 .button{
+  z-index:20;
   background-color:#8AFE4F !important;
   color:black !important;
   position: absolute !important;
@@ -588,9 +585,9 @@ a{
   top:150px;
   height:50vh;
   width:100vw;
-  /* background-color:#FF40FF; */
+  background-color:#FF40FF;
     color:#FF40FF;
-  background-color:#000;
+  /* background-color:#000; */
   box-shadow:
   inset 0 0 50px #fff,      /* inner white */
   inset 20px 0 80px #f0f,   /* inner left magenta short */
@@ -1245,15 +1242,10 @@ transform: translate(-50%, -50%);
 .buttonwords{
   font-size: 24px;
   font-family: 'Bungee' cursive;
-  /* color:#000; */
   z-index:1;
 }
-/* .social1{
-  width:100px;
-  height:50px;
-} */
+
 .shop{
-  /* color:#4A4A4A !important; */
   text-decoration: none;
   font-family:'Bungee', cursive !important;
   font-size:21px !important;
@@ -1318,17 +1310,12 @@ font-family: 'Bungee', cursive;
   top:80px;
   overflow: auto;
   font-size:35px;
-/* display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between; */
 color:#000;
 width:100vw;
 height:100vw;
 }
 .mail a{
-  /* font-weight: 300; */
-  /* color:#333; */
+
   text-decoration: none;
 }
 .social{
@@ -1416,7 +1403,7 @@ display: inline-block;
     height:75vw;
   }
   .lockup{
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
   .logolockup{
   padding-left: 0;
@@ -1466,13 +1453,13 @@ line-height: 1.4;
 
 .flashingwords{
 
-  height:100vw;
+  height:50vw;
   width:100vw;
 
 }
 .greenblock{
 width:100vw;
-height:100vw;
+height:50vw;
   font-size: 35px;
 }
 ul{
@@ -1519,10 +1506,10 @@ overflow: auto;
   height:70vw;
 }
 .artwork{
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   /* width:100vw; */
-width: 300vw;
-  height:70vw;
+width: 100vw;
+  height:210vw;
   /* background-color:pink; */
 }
 .artwork img{
