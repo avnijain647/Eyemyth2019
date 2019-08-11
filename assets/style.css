@@ -103,8 +103,10 @@ padding-left: 10px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items:center;
+
 }
 .bar{
+  margin-bottom: 15px;
   margin-right: 5px;
   background-color: #8AFE4F;
  width:80px;
@@ -122,6 +124,7 @@ z-index:3;
   color: #D8D8D8;
 }
 .dates{
+  margin-bottom: 15px;
   /* position: sticky;
   position: -webkit-sticky;
   top:50px;
@@ -131,7 +134,7 @@ line-height: 1;
     z-index: 11;
   font-size: 80px;
     padding-right: 5px;
-    margin-bottom: 5px;
+    /* padding-bottom: 15px; */
   display: inline-block;
   color: #8AFE4F;
 }

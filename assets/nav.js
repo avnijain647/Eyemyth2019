@@ -83,6 +83,8 @@ $('.voidposition').css('opacity', 0 )
          // $('.festival').css('font-size', 0 )
            // $('.mumbai').css('font-size', 0 )
            $('.dates').css('font-size', 21  )
+                $('.dates').css('  margin-bottom', 0  )
+                  $('.bar').css('  margin-bottom', 0  )
            // $('.voidposition').css('opacity', 0  )
       }
 
