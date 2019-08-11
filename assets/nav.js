@@ -14,6 +14,7 @@ var barpercentage = percentage * bardiff/100
 
 
 if(windowWidth>750){
+
   $('.bar').css('width', barpercentage  )
     if (pixels <= 20){
        $('.eyemyth').css('font-size', 160 - pixels/10)
@@ -34,18 +35,13 @@ $('.voidposition').css('opacity', 0 )
        $('.mumbai').css('font-size', 0)
 
     }
-    if (pixels >= 10){
-       // $('.eyemyth').css('font-size', 200 - pixels)
-        $('.festival').css('font-size', 0)
-
-        // $('.dates').css('font-size', 50 - pixels)
-
-        $('.mumbai').css('font-size', 0)
+    if (pixels >= 700){
+     $('.lockupvoid').css('height', 80 )
     }
 
 
     if (pixels <= 90){
-         $('.lockup').css('padding-top', 10)
+         // $('.lockup').css('padding-top', 10)
        // $('.lockup').css('padding-top', 100 - pixels)
 
     }
@@ -58,12 +54,12 @@ $('.voidposition').css('opacity', 0 )
   if(windowWidth<750){
 
       console.log(barpercentage)
-
+// $('.lockupvoid').css('height', 70  )
       $('.bar').css('width', barpercentage )
       if (pixels <=300){
-          $('.bar').css('width', 0 )
+          $('.bar').css('width', 20 )
 // $('.eyemyth').css('display', 'block')
-
+// $('.lockupvoid').css('height', 80 )
          // $('.eyemyth').css('font-size', 63 - pixels/50)
           // $('.festival').css('font-size', 35  - pixels*20)
             // $('.mumbai').css('font-size', 35 - pixels*20 )
@@ -72,8 +68,8 @@ $('.voidposition').css('opacity', 0 )
             // $('.mumbai').css('opacity', 1 - pixels/50  )
             // $('.voidposition').css('opacity', 1 - pixels/400  )
             $('.eyemyth').css('font-size', 56  )
-             $('.festival').css('font-size', 35  )
-               $('.mumbai').css('font-size', 21)
+             // $('.festival').css('font-size', 56  )
+               // $('.mumbai').css('font-size', 56)
                $('.dates').css('font-size', 21  )
                $('.festival').css('opacity', 1   )
                $('.mumbai').css('opacity', 1 )
@@ -81,6 +77,7 @@ $('.voidposition').css('opacity', 0 )
       }
 
       else {
+        // $('.eyemyth').css('padding-bottom', 10)
   // $('.eyemyth').css('display', 'inline')
         $('.eyemyth').css('font-size', 35)
          // $('.festival').css('font-size', 0 )
@@ -89,14 +86,15 @@ $('.voidposition').css('opacity', 0 )
            // $('.voidposition').css('opacity', 0  )
       }
 
-      if (pixels <= 10){
+      if (pixels >= 700){
+$('.lockupvoid').css('height', 80 )
           // $('.bar').css('width', 100)
          // $('.lockup').css('padding-top', 210 - pixels)
 
       }
       else {
-
-         $('.lockup').css('padding-top', 10)
+$('.lockupvoid').css('height', 0 )
+         // $('.eyemyth').css('padding-bottom', 10)
 
       }
     }

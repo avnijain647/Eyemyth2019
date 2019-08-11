@@ -76,6 +76,12 @@ padding-left: 10px;
   background-color: #000;
 }
 .festival{
+  position: sticky;
+    position:-webkit-sticky;
+  /* padding-top: 10px; */
+  top:-150px;
+  z-index: 7;
+  line-height: 1;
   font-family: 'Bungee', cursive;
   font-size: 80px;
     padding-left: 10px;
@@ -105,6 +111,7 @@ padding-left: 10px;
   height:10px;
 }
 .mumbai{
+  line-height: 1;
   position: sticky;
   position:-webkit-sticky;
 top:-50px;
@@ -119,7 +126,7 @@ z-index:3;
   position: -webkit-sticky;
   top:50px;
   left:0; */
-
+line-height: 1;
   font-family: 'Bungee', cursive;
     z-index: 11;
   font-size: 80px;
@@ -154,11 +161,11 @@ video{
   z-index: 2;
   width:100vw;
   overflow: hidden;
-  height:80px;
+  height:0px;
 }
 .voidposition{
 width:90vw;
-
+padding-top: 10px;
 font-size: 21px;
 line-height: 1.4;
   color: #8AFE4F;
@@ -190,7 +197,7 @@ font-family: 'Bungee';
   width:95vw;
   font-family: 'fira Sans';
   font-family: 300;
-  font-size: 21px;
+  font-size: 16px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -326,15 +333,15 @@ width:82vw;
     padding-bottom :50px;
 }
 .artistname{
-  border-top:2px solid #FF40FF;
+  border-top:1px solid #FF40FF;
   position: sticky;
   position: -webkit-sticky;
   top:150px;
   font-size: 35px;
-  padding-top:15px;
+  padding-top:10px;
   padding-left:15px;
-    padding-bottom:15px;
-  color:#fff;
+    padding-bottom:10px;
+  color:#D8D8D8;
   /* color:#D8D8D8; */
     font-size: 35px;
   font-family: 'Bungee', cursive;
@@ -364,7 +371,7 @@ align-items:  flex-start;
 .conferences,
 .afterparties,
 .showcases{
-
+position: relative;
 
 }
 .rotate{
@@ -372,12 +379,12 @@ align-items:  flex-start;
 }
 .artwork{
   position: absolute;
-  height:270vh;
+
 width: 120vh;
   background-color:#D8D8D8;
-  /* animation: move3 9s steps(3)infinite; */
+
   transform: rotate(0);
-/* animation: slideshow2 24s linear infinite; */
+
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -412,6 +419,29 @@ height:90vh;
 width: 120vh;
 
 }
+.hand{
+  position: absolute;
+  top:50%;
+  transform: rotateY(-50%);
+  right:10px;
+  animation: scroll .7s infinite;
+}
+.hand img{
+  height:75px;
+  width:75px;
+
+}
+@keyframes scroll {
+0%{
+right:10px;
+}
+50%{
+right:20px;
+}
+100%{
+right:10px;
+}
+}
 .introconferences{
   font-size: 17.5px;
   padding-left: 15px;
@@ -433,13 +463,13 @@ font-family: 'Bungee', cursive;
 /* mix-blend-mode: hue; */
 }
 .jelloword{
-  padding-top:15px;
+  padding-top:10px;
   padding-left:15px;
   width:70vw;
 }
 .jelloword a{
   display: inline-block;
-  color:#4A4A4A;
+  color:#D8D8D8;
 }
 .jelloword a{
 
@@ -582,7 +612,7 @@ a{
   /* mix-blend-mode: saturation; */
   position: sticky;
   position:-webkit-sticky;
-  top:150px;
+  top:80px;
   height:50vh;
   width:100vw;
   background-color:#FF40FF;
@@ -910,7 +940,7 @@ background-color: #8AFE4F;
 }
 .archiveintro{
   line-height: 1.4;
-  font-size: 17.5px;
+  font-size: 16px;
   padding-bottom:10px;
 }
 .partner2{
@@ -1234,12 +1264,13 @@ transform: translate(-50%, -50%);
   height:80vw;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: flex-end; */
-  /* align-items: stretch; */
+  justify-content: center;
+  align-items: center;
     mix-blend-mode: hard-light;
     line-height: 1.4;
 }
 .buttonwords{
+  text-align: center;
   font-size: 24px;
   font-family: 'Bungee' cursive;
   z-index:1;
@@ -1290,7 +1321,7 @@ color:#000;
   position: sticky;
   position: -webkit-sticky;
   top:80px;
-  z-index:2;
+  z-index:20;
   max-width:100%;
 padding-left:50px;
 padding-right:50px;
@@ -1355,7 +1386,7 @@ transform: translate(-50%, -50%);
   height:35px;
 }
 .creditintro{
-
+z-index:3;
     color:#D8D8D8;
     font-family: 'Bungee';
     line-height: 1.4;
@@ -1414,12 +1445,20 @@ display: inline-block;
   .eyemyth{
     /* display: block ; */
     z-index:10;
-font-size:60px;
+font-size:56px;
 
   }
-  .festival,
-  .dates,
+  .festival{
+    font-family: 'Bungee', cursive;
+    font-size: 56px;
+      /* padding-left: 10px; */
+    color: #FF40FF;
+  }
   .mumbai{
+    font-size:35px;
+  }
+
+  .dates{
     font-size:21px;
   }
 
@@ -1428,7 +1467,7 @@ font-size:60px;
     height:5px;
   }
   .lockupvoid{
-    height:80px;
+    height:0px;
   }
   .weekend{
     height:70px;
@@ -1501,20 +1540,21 @@ flex-wrap: wrap;
 }
 .artworkall{
   position: relative;
-overflow: auto;
+/* overflow: auto; */
   width:100vw;
-  height:70vw;
+  height:100vw;
 }
 .artwork{
+
   flex-wrap: wrap;
   /* width:100vw; */
-width: 100vw;
-  height:210vw;
+width: 400vw;
+  /* height:100vw; */
   /* background-color:pink; */
 }
 .artwork img{
   width:100vw;
-  height:70vw;
+  height:100vw;
   /* background-color:pink; */
 }
 .introconferences{
@@ -1539,7 +1579,7 @@ height:100vh;
     height:70px;
   }
 .artistname{
-    font-size: 24px;
+    font-size: 21px;
 }
   .intro_img{
     width:100%;
@@ -1612,9 +1652,9 @@ font-size: 35px;
   font-size: 18px;
 }
 .archiveyear{
-  font-size: 24px;
+  font-size: 42px;
   font-family: 'Bungee' cursive;
-  color:#FF40FF;
+  color:#FFF;
   z-index:1;
 }
 
@@ -1695,7 +1735,8 @@ background-color:white;
 }
 .actions{
   top:80px;
-  /* height:80vh; */
+
+  padding: 10px;
 }
 
 
