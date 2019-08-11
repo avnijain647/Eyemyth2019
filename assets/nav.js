@@ -60,7 +60,7 @@ $('.voidposition').css('opacity', 0 )
       console.log(barpercentage)
 
       $('.bar').css('width', barpercentage )
-      if (pixels <=200){
+      if (pixels <=300){
           $('.bar').css('width', 0 )
 // $('.eyemyth').css('display', 'block')
 
@@ -73,7 +73,7 @@ $('.voidposition').css('opacity', 0 )
             // $('.voidposition').css('opacity', 1 - pixels/400  )
             $('.eyemyth').css('font-size', 63  )
              $('.festival').css('font-size', 35  )
-               $('.mumbai').css('font-size', 35)
+               $('.mumbai').css('font-size', 21)
                $('.dates').css('font-size', 21  )
                $('.festival').css('opacity', 1   )
                $('.mumbai').css('opacity', 1 )
