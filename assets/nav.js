@@ -131,8 +131,8 @@ $('.voidposition').css('opacity', 0 )
         // doc.style.fontfamily = textArray[i];
         $(".greenblock").css("font-family", textArray[i]);
         i++;
-        $(".greenblock").css("color", color[i]);
-        i++;
+        // $(".greenblock").css("color", color[i]);
+        // i++;
         if(i > textArray.length - 1) {
           i = 0;
         }

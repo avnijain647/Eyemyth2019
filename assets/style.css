@@ -333,7 +333,7 @@ width:82vw;
   border-top:2px solid #FF40FF;
   position: sticky;
   position: -webkit-sticky;
-  top:180px;
+  top:150px;
   font-size: 35px;
   padding-top:15px;
   padding-left:15px;
@@ -362,7 +362,7 @@ justify-content: space-between;
 align-items:  flex-start;
   background-color: #000;
   position: sticky;
-  top:180px;
+  top:150px;
   position:-webkit-sticky;
 }
 .conferences,
@@ -379,8 +379,7 @@ align-items:  flex-start;
   height:270vh;
 width: 120vh;
   background-color:#D8D8D8;
-  animation: move3 3s steps(3)infinite;
-
+  animation: move3 9s steps(3)infinite;
   transform: rotate(0);
 /* animation: slideshow2 24s linear infinite; */
   display:flex;
@@ -405,7 +404,7 @@ width: 120vh;
   }
 }
 .artwork img{
-    animation: move4 1s infinite;
+    /* animation: move4 1s infinite; */
   height:90vh;
 width: 120vh;
 
@@ -427,22 +426,26 @@ width: 120vh;
 
 .jello{
 /* color: #8AFE4F; */
-width:70vw;
+width:100vw;
 background-color: #000;
 border-top: 1px solid #FF40FF;
-padding-top:15px;
-padding-left:15px;
+
 color:#D8D8D8;
   font-size: 35px;
 /* width:45%; */
 font-family: 'Bungee', cursive;
 /* mix-blend-mode: hue; */
 }
-.jello a{
+.jelloword{
+  padding-top:15px;
+  padding-left:15px;
+  width:70vw;
+}
+.jelloword a{
   display: inline-block;
   color:#4A4A4A;
 }
-.jello1 a{
+.jelloword a{
 
   animation: jello 2s infinite;
 /* animation-delay: 2.5s; */
@@ -588,14 +591,15 @@ a{
   /* background-color:#FF40FF; */
     color:#FF40FF;
   background-color:#000;
-}
-.greenblock{
   box-shadow:
   inset 0 0 50px #fff,      /* inner white */
   inset 20px 0 80px #f0f,   /* inner left magenta short */
       inset -20px 0 80px #0ff,  /* inner right cyan short */
       inset 20px 0 300px #f0f,  /* inner left magenta broad */
       inset -20px 0 300px #0ff; /* inner right cyan broad */
+}
+.greenblock{
+
 
   width:100vw;
   height:50vh;
@@ -603,10 +607,11 @@ a{
   z-index: 0;
   overflow: hidden;
 /* border-top: 2px solid #FF40FF; */
+color:#000;
   /* color:#8AFE4F ; */
   font-size: 70px ;
   line-height: 1.4;
-  background-color:#FF40FF;
+  /* background-color:#FF40FF; */
 }
 .greenblock2{
   position: relative;
@@ -627,6 +632,7 @@ ul{
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  /* background-color: red; */
 /* margin:0; */
 /* max-width:90vw; */
 
@@ -635,7 +641,7 @@ height:40vw;
   list-style-type: none;
 }
 li{
-  text-align: left;
+  text-align: center;
 height:50vh;
   /* line-height: 1 !important; */
 }
@@ -668,8 +674,8 @@ font-weight: 900;
 .weekend{
     z-index:3;
   color:#000;
-  font-size:70px;
-  height:40vh;
+  font-size:63px;
+  height:20vh;
   width:100vw;
   background-color: #8AFE4F;
   font-family: 'Bungee', cursive;
@@ -684,7 +690,7 @@ font-weight: 900;
   width:90vw;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  /* justify-content: flex-start; */
   align-items: center;
   position: absolute;
   /* top:50%; */
@@ -1239,7 +1245,7 @@ transform: translate(-50%, -50%);
   border-radius: 50px;
 }
 .shopmail{
-  font-size:21px !important;
+  font-size:18px !important;
   font-family:'Bungee', cursive !important;
   position: relative;
   width:350px;
@@ -1250,7 +1256,7 @@ transform: translate(-50%, -50%);
 }
 .shopmail2{
     background-color: #FF40FF;
-  font-size:21px !important;
+  font-size:18px !important;
   font-family:'Bungee', cursive !important;
   position: relative;
   width:350px;
@@ -1259,7 +1265,8 @@ transform: translate(-50%, -50%);
   border-radius: 50px;
 }
 .shopword{
-
+text-align: center;
+width:300px;
 position: absolute;
 top: 50%;
 left:50%;
@@ -1416,14 +1423,14 @@ font-size:60px;
     height:80px;
   }
   .weekend{
-    height:100px;
+    height:70px;
     width:100vw;
     top:80px;
-    font-size: 28px;
+    font-size: 24px;
   }
   .weekendmiddle{
 left:15px;
-    height:100px;
+    height:70px;
     width:80vw;
 
 
@@ -1445,7 +1452,7 @@ line-height: 1.4;
 .greenblock{
 width:100vw;
 height:100vw;
-  font-size: 49px;
+  font-size: 35px;
 }
 ul{
 margin:0;
@@ -1454,7 +1461,7 @@ padding:0px;
 }
 li{
   /* max-width:90%; */
-height:100vw;
+height:80vw;
   line-height: 1.4;
 
 }
@@ -1473,7 +1480,7 @@ height:100vw;
   width:100%;
 flex-wrap: wrap;
   position: sticky;
-  top:180px;
+  top:150px;
   position:-webkit-sticky;
 }
 .conferences,
@@ -1597,7 +1604,7 @@ font-size: 35px;
   font-size: 18px;
 }
 .archiveyear{
-  font-size: 35px;
+  font-size: 24px;
   font-family: 'Bungee' cursive;
   color:#FF40FF;
   z-index:1;
@@ -1657,12 +1664,12 @@ animation: move2 10s steps(10)infinite;
 }
 .partnerheader{
 width:95vw;
-  font-size: 28px;
+  font-size: 24px;
 }
 .partner{
-  height: 100px;
+  height: 70px;
   padding:0px;
-  font-size: 28px;
+  font-size: 24px;
 }
 .partnerlogos{
   background-color: white !important;
