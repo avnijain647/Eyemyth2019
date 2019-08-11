@@ -71,7 +71,7 @@ $('.voidposition').css('opacity', 0 )
             // $('.festival').css('opacity', 1 - pixels/50  )
             // $('.mumbai').css('opacity', 1 - pixels/50  )
             // $('.voidposition').css('opacity', 1 - pixels/400  )
-            $('.eyemyth').css('font-size', 63 - pixels/20 )
+            $('.eyemyth').css('font-size', 63  )
              $('.festival').css('font-size', 35  )
                $('.mumbai').css('font-size', 35)
                $('.dates').css('font-size', 21  )
@@ -111,14 +111,19 @@ $('.voidposition').css('opacity', 0 )
 
 
       var doc = document.getElementById("#ticker");
-      var color = ["#8AFE4F", "#FF40FF", "#F4E243", "#37A7FF", "#CA83F6", "#F5A623"];
+      var color = ["#8AFE4F", "#FF40FF", "#FFF", "#37A7FF", "#CA83F6", "#F5A623"];
+      // "#F4E243"
       var textArray = [
           'Bungee',
-          'VT323',
-          'Space Mono',
-          'B612',
-          'Nova Mono',
-          'Ubuntu Mono'
+              'Bungee Outline',
+              'Bungee Shade',
+                'Bungee Hairline',
+                'Bungee Inline'
+          // 'VT323',
+          // 'Space Mono',
+          // 'B612',
+          // 'Nova Mono',
+          // 'Ubuntu Mono'
 
       ];
       var i = 0;
